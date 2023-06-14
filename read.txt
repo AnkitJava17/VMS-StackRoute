@@ -1,6 +1,41 @@
+Angular Requirements:
+
+npm -v
+8.11.0
+v16.16.0
+
+ng version
+
+Angular CLI: 16.0.6
+Node: 16.16.0
+Package Manager: npm 8.11.0
+OS: win32 x64
+
+Angular: 16.1.0
+... animations, cdk, common, compiler, compiler-cli, core, forms
+... material, platform-browser, platform-browser-dynamic, router
+
+Package                         Version
+---------------------------------------------------------
+@angular-devkit/architect       0.1601.0
+@angular-devkit/build-angular   16.1.0
+@angular-devkit/core            16.1.0
+@angular-devkit/schematics      16.0.6
+@angular/cli                    16.0.6
+@schematics/angular             16.0.6
+rxjs                            7.8.1
+typescript                      5.0.4
+
 Day 1->
 started working on test cases
 update all
 
 Abhinav Goswami-
 1) Developing User Microservice
+Amit Awasthi-
+Creating Dashboard
+Kajal Jawale-
+Ride Sharing
+Ankit Bora-
+Guidance and Mentor
+
