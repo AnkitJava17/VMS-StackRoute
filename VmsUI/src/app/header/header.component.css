@@ -1,0 +1,281 @@
+/* @import '~@fortawesome/fontawesome-free/css/all.css';
+
+.header {
+  background-color: white;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.profile-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  margin-right: 10px;
+  color: #00a8ff;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.person-icon {
+  color: blue;
+}
+
+.arrow-icon {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: #333;
+  font-size: 20px;
+}
+
+.arrow-icon.inverted {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  display: none;
+  padding: 10px;
+  min-width: 300px; 
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content.open {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+.mat-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow-icon {
+  margin-left: auto;
+  color: gray;
+} */
+
+
+/* @import '~@fortawesome/fontawesome-free/css/all.css';
+
+.header {
+  background-color: white;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.profile-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  margin-right: 10px;
+  color: #00a8ff;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.person-icon {
+  color: blue;
+}
+
+.arrow-icon {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: #333;
+  font-size: 20px;
+}
+
+.arrow-icon.inverted {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  min-width: 300px; 
+}
+
+.mat-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow-icon {
+  margin-left: auto;
+  color: gray;
+} */
+
+
+/* @import '~@fortawesome/fontawesome-free/css/all.css';
+
+.header {
+  background-color: white;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.person-icon {
+  color: blue;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.arrow-icon {
+  color: #333;
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-icon.inverted {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  min-width: 300px; 
+}
+
+.mat-menu-item {
+  display: flex;
+  align-items: center;
+} */
+
+
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.header {
+  background-color: white;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.profile-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.person-icon {
+  color: blue;
+  font-size: 40px;
+}
+
+::ng-deep .profile-button .arrow-icon {
+  color: #333;
+  font-size: 30px;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+::ng-deep .profile-button .arrow-icon.inverted {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  display: none;
+  padding: 10px;
+  min-width: 200px;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+/* .dropdown-content.open {
+  display: FLEX;
+} */
+
+.dropdown-content button {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #f2f2f2;
+}

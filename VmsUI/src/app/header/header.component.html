@@ -1,0 +1,112 @@
+<!-- <header class="header">
+    <div class="logo">
+      <img src="assets/ncs_logo.png" alt="Logo">
+    </div>
+    <div class="profile-dropdown">
+      <div class="profile-icon" (click)="toggleDropdown()">
+        <i class="fas fa-user-circle person-icon"></i>
+      </div>
+      <div class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }" (click)="toggleDropdown()">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <div class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
+        <a href="#">Login <i class="fas fa-chevron-right"></i></a>
+        <a href="#">Register <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </header>
+   -->
+
+   <!-- <header class="header">
+    <div class="logo">
+      <img src="assets/ncs_logo.png" alt="Logo">
+    </div>
+    <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
+      <div class="profile-icon" (click)="toggleDropdown()">
+        <i class="fas fa-user-circle person-icon"></i>
+      </div>
+      <div class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }" (click)="toggleDropdown()">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <mat-menu #dropdownMenu="matMenu" class="dropdown-content">
+        <button mat-menu-item>
+          <span>Login</span>
+          <span class="arrow-icon"><i class="fas fa-chevron-right"></i></span>
+        </button>
+        <button mat-menu-item>
+          <span>Register</span>
+          <span class="arrow-icon"><i class="fas fa-chevron-right"></i></span>
+        </button>
+      </mat-menu>
+    </div>
+  </header> -->
+  
+<!-- 
+  <header class="header">
+    <div class="logo">
+      <img src="assets/ncs_logo.png" alt="Logo">
+    </div>
+    <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
+      <div class="profile-icon" (click)="toggleDropdown()">
+        <i class="fas fa-user-circle person-icon"></i>
+      </div>
+      <div class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }" (click)="toggleDropdown()">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <mat-menu #dropdownMenu="matMenu" class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
+        <button mat-menu-item>
+          <span>Login</span>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <button mat-menu-item>
+          <span>Register</span>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </mat-menu>
+    </div>
+  </header>
+     -->
+
+<!-- 
+     <header class="header">
+        <div class="logo">
+          <img src="assets/ncs_logo.png" alt="Logo">
+        </div>
+        <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
+          <button mat-icon-button class="profile-button" (click)="toggleDropdown()">
+            <i class="fas fa-user-circle person-icon"></i>
+            <i class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }"></i>
+          </button>
+          <mat-menu #dropdownMenu="matMenu" class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
+            <button mat-menu-item>
+              <span>Login</span>
+            </button>
+            <button mat-menu-item>
+              <span>Register</span>
+            </button>
+          </mat-menu>
+        </div>
+      </header>
+       -->
+
+
+       <header class="header">
+        <div class="logo">
+          <img src="../../assets/headerAssets/ncs_logo.png" alt="Logo">
+        </div>
+        <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
+          <button mat-icon-button class="profile-button" (click)="toggleDropdown()">
+            <i class="fas fa-user-circle person-icon"></i>
+            <i class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }"></i>
+          </button>
+          <mat-menu #dropdownMenu="matMenu" class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
+            <button mat-menu-item>
+              <span>Login</span>
+            </button>
+            <button mat-menu-item>
+              <span>Register</span>
+            </button>
+          </mat-menu>
+        </div>
+      </header>
+      

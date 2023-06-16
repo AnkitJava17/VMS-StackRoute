@@ -1,0 +1,11 @@
+.dashboard {
+    padding: 20px;
+  }
+  
+  .cover-image {
+    background-image: url("../../assets/dashboardAssets/car_cover.jpg"); /* Replace with your cover image path or URL */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust the height according to your design */
+  }
+  
