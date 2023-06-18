@@ -30,10 +30,9 @@ import { TripDivisionComponent } from './components/trip-division/trip-division.
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
 
 
-
-
 @NgModule({
   declarations: [
+    AppComponent,
     AboutUsComponent,
     ContactUsComponent,
     DashboardComponent,
@@ -65,8 +64,6 @@ import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rent
     MatNativeDateModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-
-
   ],
   providers: [
     AuthService,

@@ -11,9 +11,10 @@ import { RideSharingComponent } from './components/ride-sharing/ride-sharing.com
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
+  // { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'dashboard', component: DashboardComponent },
