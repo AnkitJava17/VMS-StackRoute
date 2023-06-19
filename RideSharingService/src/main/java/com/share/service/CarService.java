@@ -13,6 +13,4 @@ public interface CarService  {
 
     public List<Cars> getAvailableCars();
 
-
-
 }

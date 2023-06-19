@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RentalserviceApplication",
+            "request": "launch",
+            "mainClass": "com.rental.rentalservice.RentalserviceApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-UserServiceApplication<UserService>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
