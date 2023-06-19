@@ -27,12 +27,31 @@ APIs can help improve software and system testing by allowing quality engineerin
 - Installing Postman is must as we need to test our API
 
 
-### :notebook: Pre-Requisites
-- Java Core
-- MySQL
-- SpringBoot
-- Postman
-- Angular
+### :notebook: Operating Environment
+Frontend:
+1. Framework: Angular (version 16.0.2), Node (version 16.16.0), npm (version 8.11.0)
+2. Web browser: Compatible with Google Chrome. Version 114.0.5735.110 (Official Build) (64-bit)
+3. Third-Party Location API
+4. Code Editor: VSCode
+Backend:
+1. Framework: Spring Boot (version: 3.0.7)
+2. Programming Language: Java 17
+3. Maven Build
+4. Microservices Architecture
+5. Discovery Server (Eureka)
+6. JWT Filter
+7. IDE: IntelliJ IDEA/STS
+Database:
+1. MySQL RDBMS: The system requires the installation and configuration of MySQL (version 8.0.33) as the RDBMS for microservices.
+2. MongoDB: Installation and setup of MongoDB (version X.X.X) to support report generation and analytics for admin.
+Testing and Security:
+1. Unit Testing: Junit 5
+2. Jacoco: for code (test cases) coverage
+3. JWT Authentication
+Deployment:
+Cloud Deployment: AWS
+OS:
+Windows OS
 
 ###  :nut_and_bolt: Development Environment
 - Dependencies can be set while starting the project in spring initializer phase although if you miss any of the dependency, these can be further added in pom file which stores all the dependencies. When we initialize the spring it already provides us a pom file.
