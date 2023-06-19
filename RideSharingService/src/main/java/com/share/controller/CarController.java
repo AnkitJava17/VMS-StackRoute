@@ -36,4 +36,7 @@ public class CarController {
         List<RideShare> rideDetails = rideShareService.getBookingDetails();
         return ResponseEntity.ok(rideDetails);
    }
+
+//   @GetMapping("/rideDetails")
+//    public
 }

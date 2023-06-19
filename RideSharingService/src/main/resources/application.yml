@@ -1,0 +1,28 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  application:
+    name: RideSharingService
+  datasource:
+
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Kajal@123
+    url: jdbc:mysql://localhost:3306/cardb
+eureka:
+  instance:
+    prefer-ip-address: 'true'
+  client:
+    register-with-eureka: 'true'
+    fetch-registry: 'true'
+    eureka-service-url:
+      default-zone: http://localhost:8761/eureka
+
+server:
+  port: '8080'
