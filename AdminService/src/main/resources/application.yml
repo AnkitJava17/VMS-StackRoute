@@ -10,7 +10,7 @@ spring:
   application:
     name: admin-service
   datasource:
-    password: admin
+    password: Kajal@123
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     url: jdbc:mysql://localhost:3306/adminservice

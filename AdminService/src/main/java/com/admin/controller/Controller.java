@@ -26,7 +26,8 @@ public class Controller {
     @GetMapping("/{carId}")
     public ResponseEntity<Optional<Car>> getCarById(@PathVariable int carId) {
         Optional<Car> car = adminService.getCarById(carId);
-        return ResponseEntity.ok(car);
+       // return ResponseEntity.ok(car);
+        return ResponseEntity.status(HttpStatus.OK).body(car);
     }
 
     @PostMapping("/addCars")

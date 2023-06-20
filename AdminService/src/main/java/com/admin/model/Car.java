@@ -37,4 +37,6 @@ public class Car {
     @Column(name = "car_image")
     private String carImage;
 
+    @Column(name="car_driver")
+    private String carDriver;
 }
