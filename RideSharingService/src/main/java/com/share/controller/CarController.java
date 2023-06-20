@@ -1,29 +1,30 @@
 package com.share.controller;
 
-import com.share.model.Cars;
+
+import com.share.feignConfig.CarDetails;
+import com.share.model.Car;
 import com.share.model.RideShare;
-import com.share.service.CarService;
 import com.share.service.RideShareService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
+
 import java.util.List;
+
+
 @CrossOrigin(origins ="http://localhost:4200" )
 @RestController
-@RequestMapping("/cars")
+@RequestMapping("/rides")
 public class CarController {
-    @Autowired
-    private CarService carService;
 
     @Autowired
     private RideShareService rideShareService;
 
-    @GetMapping("/available")
-    public List<Cars> getAvailableCars() {
-        return carService.getAvailableCars();
-    }
+    @Autowired
+    private CarDetails carDetails;
 
    @PostMapping("/booking")
     public ResponseEntity<RideShare> bookRide(@RequestBody RideShare rideShare){
@@ -37,4 +38,12 @@ public class CarController {
         return ResponseEntity.ok(rideDetails);
    }
 
+<<<<<<< HEAD
+=======
+    @GetMapping("/bookingVCar")
+    public List<Car> getBookingVCar(){
+      return carDetails.getAllCarDetails();
+    }
+
+>>>>>>> 209fb2806a81c8c4a077954d4ffc5e5962427772
 }
