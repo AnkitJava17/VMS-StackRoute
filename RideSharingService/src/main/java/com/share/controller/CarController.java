@@ -37,6 +37,4 @@ public class CarController {
         return ResponseEntity.ok(rideDetails);
    }
 
-//   @GetMapping("/rideDetails")
-//    public
 }

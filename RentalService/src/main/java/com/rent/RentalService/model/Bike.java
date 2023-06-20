@@ -17,6 +17,8 @@ public class Bike {
 	@GeneratedValue(strategy=GenerationType.AUTO)
     private int car_ID;
 
+    private String bike_name;
+
     private String bike_model;
 
     private String bike_brand;

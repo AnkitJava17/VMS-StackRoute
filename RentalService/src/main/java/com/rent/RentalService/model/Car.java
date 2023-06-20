@@ -17,6 +17,8 @@ public class Car {
 	@GeneratedValue(strategy=GenerationType.AUTO)
     private int car_ID;
 
+    private String car_name;
+
     private String car_model;
 
     private String car_brand;

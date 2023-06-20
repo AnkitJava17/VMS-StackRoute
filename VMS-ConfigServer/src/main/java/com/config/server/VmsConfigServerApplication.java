@@ -9,5 +9,4 @@ public class VmsConfigServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(VmsConfigServerApplication.class, args);
 	}
-
 }

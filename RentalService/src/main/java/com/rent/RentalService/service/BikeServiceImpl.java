@@ -3,16 +3,13 @@ package com.rent.RentalService.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import com.rent.RentalService.model.Bike;
-import com.rent.RentalService.model.Car;
 import com.rent.RentalService.repository.BikeRepository;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
-@Service
 public class BikeServiceImpl implements BikeService {
 
 	@Autowired 

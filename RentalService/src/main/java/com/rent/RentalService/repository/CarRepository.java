@@ -8,4 +8,5 @@ import com.rent.RentalService.model.Car;
 @Repository
 public interface CarRepository extends JpaRepository<Car, Integer> {
 
+    public Car findCarByName(String carName);
 }

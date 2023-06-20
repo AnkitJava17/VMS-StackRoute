@@ -1,10 +1,12 @@
 package com.rent.RentalService.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.rent.RentalService.exception.CarNotFoundException;
 import com.rent.RentalService.model.Car;
 import com.rent.RentalService.repository.CarRepository;
 
@@ -24,12 +26,30 @@ public class CarServiceImpl implements CarService {
 		return carRepository.findAll();
 	}
 	
-	public Car getCarById(int id) {
-		return carRepository.getById(id);
+	public Car getCarById(Integer id) throws CarNotFoundException {
+		Optional<Car> car = carRepository.findById(id);
+		if (car.isEmpty()){
+			throw new CarNotFoundException("Car does not exist");
+		}else{
+			return car.get();
+		}
+	}
+	public Car getCarByName(String carName) throws CarNotFoundException {
+		Car car = carRepository.findCarByName(carName);
+		if (car == null){
+			throw new CarNotFoundException("Car does not exist");
+		}else{
+			return car;
+		}
 	}
 	
-	public void saveCar(Car car) {
-		carRepository.save(car);
+	public void saveCar(Car upCar) throws CarNotFoundException{
+		Optional<Car> car = carRepository.findById(upCar.getCar_ID());
+		if (car.isEmpty()){
+			throw new CarNotFoundException("Car does not exist");
+		}else{
+			carRepository.saveAndFlush(upCar);
+		}
 	}
 
 	@Override
@@ -43,5 +63,10 @@ public class CarServiceImpl implements CarService {
 	@Override
 	public List<Car> getAvailableCars() {
 		return findAllByAvailable(true);
+	}
+
+	@Override
+	public Car getCarById(int id) throws CarNotFoundException {
+		
 	}
 }
