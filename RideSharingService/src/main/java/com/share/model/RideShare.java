@@ -1,13 +1,7 @@
 package com.share.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.sql.Time;
 
@@ -16,11 +10,12 @@ import java.sql.Time;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 @Table(name="ride_sharing")
 public class RideShare {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int ride_ID;
 
     private String ride_source;
