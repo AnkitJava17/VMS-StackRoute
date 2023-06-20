@@ -3,5 +3,19 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/AdminService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AdminService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../RentalService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../RentalService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../RideSharingService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../RideSharingService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../UserService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../UserService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../VMS-APIGatewayService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../VMS-APIGatewayService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../VMS-ConfigServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../VMS-ConfigServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../VMS-DiscoveryService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../VMS-DiscoveryService/src/main/resources" charset="UTF-8" />
   </component>
 </project>

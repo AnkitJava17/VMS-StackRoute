@@ -7,13 +7,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="VMS-APIGatewayService" />
+        <module name="RentalService" />
         <module name="AdminService" />
+        <module name="UserService" />
+        <module name="VMS-ConfigServer" />
+        <module name="RideSharingService" />
+        <module name="VMS-DiscoveryService" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AdminService" options="-parameters" />
+      <module name="RentalService" options="-parameters" />
+      <module name="RideSharingService" options="-parameters" />
+      <module name="UserService" options="-parameters" />
+      <module name="VMS-APIGatewayService" options="-parameters" />
+      <module name="VMS-ConfigServer" options="-parameters" />
+      <module name="VMS-DiscoveryService" options="-parameters" />
     </option>
   </component>
 </project>
