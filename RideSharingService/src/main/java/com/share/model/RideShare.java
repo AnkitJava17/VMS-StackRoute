@@ -1,15 +1,12 @@
 package com.share.model;
 
 import jakarta.persistence.*;
-<<<<<<< HEAD
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-=======
 import lombok.*;
->>>>>>> 7b2f2c83c5b1a668ad296dbae423e800f367df92
-
 
 import java.sql.Time;
 
@@ -39,7 +36,5 @@ public class RideShare {
     private float ride_km;
 
     private float ride_rate;
-
-    private Car car;
 
 }

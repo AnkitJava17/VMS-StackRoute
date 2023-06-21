@@ -1,49 +1,45 @@
 package com.share.controller;
 
-
-import com.share.feignConfig.CarDetails;
 import com.share.model.Car;
-import com.share.model.RideShare;
-import com.share.service.RideShareService;
+import com.share.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
-
 import java.util.List;
-
+import java.util.Optional;
 
 @CrossOrigin(origins ="http://localhost:4200" )
 @RestController
-@RequestMapping("/rides")
+@RequestMapping("/cars")
 public class CarController {
 
     @Autowired
-    private RideShareService rideShareService;
+    private CarService carService;
 
-    @Autowired
-    private CarDetails carDetails;
 
-   @PostMapping("/booking")
-    public ResponseEntity<RideShare> bookRide(@RequestBody RideShare rideShare){
-       RideShare rides = rideShareService.insertRideRecord(rideShare);
-       return new ResponseEntity<>(rides, HttpStatus.CREATED);
-   }
-
-   @GetMapping("/bookingDetails")
-    public ResponseEntity<List<RideShare>>  getBookingDetails(){
-        List<RideShare> rideDetails = rideShareService.getBookingDetails();
-        return ResponseEntity.ok(rideDetails);
-   }
-
-<<<<<<< HEAD
-=======
-    @GetMapping("/bookingVCar")
-    public List<Car> getBookingVCar(){
-      return carDetails.getAllCarDetails();
+    @GetMapping("/getAllCars")
+    public List<Car> getAllCars() {
+        return carService.getAllCars();
     }
 
->>>>>>> 209fb2806a81c8c4a077954d4ffc5e5962427772
+    @GetMapping("/{carId}")
+    public ResponseEntity<Optional<Car>> getCarById(@PathVariable int carId) {
+        Optional<Car> car = carService.getCarById(carId);
+        // return ResponseEntity.ok(car);
+        return ResponseEntity.status(HttpStatus.OK).body(car);
+    }
+
+    @PostMapping("/addCars")
+    public ResponseEntity<Car> saveCar(@RequestBody Car car) {
+        Car savedCar = carService.saveCar(car);
+        return ResponseEntity.status(HttpStatus.CREATED).body(savedCar);
+    }
+
+    @DeleteMapping("/{carId}")
+    public ResponseEntity<Void> deleteCar(@PathVariable int carId) {
+        carService.deleteCar(carId);
+        return ResponseEntity.noContent().build();
+    }
 }

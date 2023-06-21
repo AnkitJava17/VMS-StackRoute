@@ -1,7 +1,8 @@
-package com.admin.service;
+package com.share.service;
 
-import com.admin.model.Car;
-import com.admin.repository.CarRepository;
+
+import com.share.model.Car;
+import com.share.repository.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class AdminServiceImpl implements AdminService{
+public class CarServiceImpl implements CarService {
     @Autowired
     private CarRepository carRepository;
 
@@ -22,6 +23,8 @@ public class AdminServiceImpl implements AdminService{
     public Optional<Car> getCarById(int carId) {
         return carRepository.findById(carId);
     }
+
+
 
     @Override
     public Car saveCar(Car car) {

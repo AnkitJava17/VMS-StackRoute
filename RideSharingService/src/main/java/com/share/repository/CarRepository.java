@@ -1,6 +1,7 @@
-package com.admin.repository;
+package com.share.repository;
 
-import com.admin.model.Car;
+
+import com.share.model.Car;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
