@@ -9,10 +9,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(name = "ride-sharing-service")
+@FeignClient(name = "ride-sharing-service" ,url = "http://localhost:8083/api/rides")
 public interface RideShare {
-    @PostMapping("/cars/addCars")
+    @PostMapping("/addCars")
    public Car saveCar(Car car);
+
+    @GetMapping("/getAllCars")
+    public List<Car> getAllCars();
+
 
 //   @GetMapping("/cars/{carId}")
 //   public  List<Car> getCarById(@PathVariable int carId);

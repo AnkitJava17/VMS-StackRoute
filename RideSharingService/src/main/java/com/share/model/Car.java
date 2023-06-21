@@ -14,7 +14,6 @@ import lombok.Setter;
 @Table(name="cars")
 public class Car {
 
-
     @Id
     @GeneratedValue
     @Column(name = "car_ID")

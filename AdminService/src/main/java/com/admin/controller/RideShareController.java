@@ -19,9 +19,12 @@ public class RideShareController {
 //    public List<Car> getBookingVCar(){
 //        return rideShare.getAllCarDetails();
 //    }
-
     @PostMapping("/saveCarDetails")
     public Car saveCar(@RequestBody Car car){
         return rideShare.saveCar(car);
+    }
+    @GetMapping("/carDetails")
+    public List<Car> getAllCars(){
+        return rideShare.getAllCars();
     }
 }
