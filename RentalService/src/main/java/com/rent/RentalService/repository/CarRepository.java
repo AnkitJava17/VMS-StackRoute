@@ -3,10 +3,14 @@ package com.rent.RentalService.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import com.rent.RentalService.model.Bike;
 import com.rent.RentalService.model.Car;
 
 @Repository
-public interface CarRepository extends JpaRepository<Car, Integer> {
+public interface CarRepository extends JpaRepository<Car, Long> {
 
-    public Car findCarByName(String carName);
+    public Car findByName(String Name);
+    
+    public Iterable<Car> findByAvailableTrue();
+
 }
