@@ -10,12 +10,12 @@ spring:
   application:
     name: admin-service
   datasource:
-    password: Kajal@123
+    password: Welcome@1
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     url: jdbc:mysql://localhost:3306/adminservice
   config:
-    import: configserver:http://localhost:8086
+    import: configserver:http://localhost:8082
 #eureka:
 #  client:
 #    register-with-eureka: 'true'
@@ -25,4 +25,4 @@ spring:
 #  instance:
 #    prefer-ip-address: 'true'
 server:
-  port: '8080'
+  port: '8086'

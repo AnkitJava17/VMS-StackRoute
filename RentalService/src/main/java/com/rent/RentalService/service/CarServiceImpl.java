@@ -4,8 +4,10 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.stereotype.Service;
 import org.springframework.stereotype.Service;
 
+import com.rent.RentalService.exception.CarAlreadyExistsException;
 import com.rent.RentalService.exception.CarNotFoundException;
 import com.rent.RentalService.model.Car;
 import com.rent.RentalService.repository.CarRepository;
@@ -19,14 +21,14 @@ public class CarServiceImpl implements CarService {
 	@Autowired
 	private CarRepository carRepository;
 	
-	@PersistenceContext
-    private EntityManager entityManager;
-	
+
+	@Override
 	public List<Car> getAllCars(){
 		return carRepository.findAll();
 	}
 	
-	public Car getCarById(Integer id) throws CarNotFoundException {
+	@Override
+	public Car getCarById(long id) throws CarNotFoundException {
 		Optional<Car> car = carRepository.findById(id);
 		if (car.isEmpty()){
 			throw new CarNotFoundException("Car does not exist");
@@ -34,8 +36,10 @@ public class CarServiceImpl implements CarService {
 			return car.get();
 		}
 	}
+
+	@Override
 	public Car getCarByName(String carName) throws CarNotFoundException {
-		Car car = carRepository.findCarByName(carName);
+		Car car = carRepository.findByName(carName);
 		if (car == null){
 			throw new CarNotFoundException("Car does not exist");
 		}else{
@@ -43,30 +47,43 @@ public class CarServiceImpl implements CarService {
 		}
 	}
 	
-	public void saveCar(Car upCar) throws CarNotFoundException{
-		Optional<Car> car = carRepository.findById(upCar.getCar_ID());
+	@Override
+	public Car updateCar(Car upCar, long carId) throws CarNotFoundException{
+		Optional<Car> car = carRepository.findById(carId);
 		if (car.isEmpty()){
 			throw new CarNotFoundException("Car does not exist");
 		}else{
-			carRepository.saveAndFlush(upCar);
+			Car modCar = car.get();
+			modCar.setAvailable(upCar.isAvailable());
+			modCar.setCar_image(upCar.getCar_image());
+			return carRepository.save(modCar);
 		}
 	}
 
 	@Override
-	public List<Car> findAllByAvailable(boolean available) {
-		String query = "SELECT c FROM Car c WHERE c.available = :available";
-		return entityManager.createQuery(query, Car.class)
-                .setParameter("available", available)
-                .getResultList();
-	}
-
-	@Override
 	public List<Car> getAvailableCars() {
-		return findAllByAvailable(true);
+		return (List<Car>) carRepository.findByAvailableTrue();
 	}
 
 	@Override
-	public Car getCarById(int id) throws CarNotFoundException {
+	public Car saveCar(Car newCar) throws CarAlreadyExistsException {
+		Optional<Car> car = carRepository.findById(newCar.getCarId());
+		if (car.isPresent()){
+			throw new CarAlreadyExistsException("Car does not exist");
+		}else{
+			return carRepository.save(newCar);
+		}
 		
 	}
+
+	@Override
+	public void deleteCar(long id) throws CarNotFoundException {
+		Optional<Car> car = carRepository.findById(id);
+		if (car.isEmpty()) {
+			throw new CarNotFoundException("Not FOund");
+		}else {
+			carRepository.deleteById(id);
+		}
+	}
+
 }

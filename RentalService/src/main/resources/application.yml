@@ -10,7 +10,7 @@ spring:
   application:
     name: rental-service
   datasource:
-    password: admin
+    password: Welcome@1
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     url: jdbc:mysql://localhost:3306/rentalservice
