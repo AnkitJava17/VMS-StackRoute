@@ -20,6 +20,6 @@ public interface RideShare {
 
 //   @GetMapping("/cars/{carId}")
 //   public  List<Car> getCarById(@PathVariable int carId);
-//    @GetMapping("/cars/getAllCars")
-//    public List<Car> getAllCarDetails();
+    @GetMapping("/cars/getAllCars")
+    public List<Car> getAllCarDetails();
 }
