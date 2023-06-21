@@ -13,19 +13,19 @@ import com.admin.model.RentCar;
 import com.admin.model.RentVehicleInfo;
 
 @RestController
-@RequestMapping("/rentals")
+@RequestMapping("/admin")
 public class RentalFeignController {
 
     @Autowired
     private RentServiceConsumer rentServiceConsumer;
 
-    @GetMapping("/bikes")
+    @GetMapping("/rental/bikes")
 	public List<RentBike> getAllBikes()
 	{
 		return rentServiceConsumer.getAllBikes();
 	}
 	
-	@GetMapping("/cars")
+	@GetMapping("/rental/cars")
 	public List<RentCar> getAllCars()
 	{
 		return rentServiceConsumer.getAllCars();

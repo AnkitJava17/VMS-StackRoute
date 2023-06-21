@@ -15,12 +15,12 @@ public class RideShareController {
     @Autowired
     RideShare rideShare;
 
-//    @GetMapping("/bookingVCar")
-//    public List<Car> getBookingVCar(){
-//        return rideShare.getAllCarDetails();
-//    }
+    @GetMapping("/ride/bookingCar")
+    public List<Car> getBookingVCar(){
+        return rideShare.getAllCarDetails();
+    }
 
-    @PostMapping("/saveCarDetails")
+    @PostMapping("/ride/saveCarDetails")
     public Car saveCar(@RequestBody Car car){
         return rideShare.saveCar(car);
     }

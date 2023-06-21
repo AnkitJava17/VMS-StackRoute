@@ -15,6 +15,10 @@ spring:
           uri: lb://rental-service
           predicates:
             - Path=/api/rentals/**
+        - id: ride-sharing-service
+          uri: lb://ride-sharing-service
+          predicates:
+            - Path=/cars/**
 eureka:
   instance:
     prefer-ip-address: true
