@@ -29,6 +29,14 @@ import { RideSharingComponent } from './components/ride-sharing/ride-sharing.com
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
 
+import { MatCardModule } from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
+
+// import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+// import { ModalModule } from 'mdb-angular-ui-kit/modal';
+
+
+
 
 @NgModule({
   declarations: [
@@ -64,6 +72,9 @@ import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rent
     MatNativeDateModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    MatCardModule,
+    MatDialogModule
+  
   ],
   providers: [
     AuthService,

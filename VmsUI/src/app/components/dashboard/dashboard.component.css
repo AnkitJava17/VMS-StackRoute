@@ -1,12 +1,29 @@
 .dashboard {
-  padding: 20px;
+  padding: 0px;
 }
 
-/*   
+
+  
   .cover-image {
-    background-image: url("../../assets/dashboardAssets/car_cover.jpg"); 
+    /* background-image: url("/assets/dashboardAssets/car_cover2.jpg");  */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/dashboardAssets/car_cover2.jpg");
+
     background-size: cover;
     background-position: center;
-    height: 400px; 
+    height: 600px; 
   }
-   */
+
+  @media screen and (max-width: 768px) {
+    .cover-image {
+      background-position: top;
+      height: 500px;
+    }
+  }
+  
+
+  .image-2 {
+    background-image: url("/assets/dashboardAssets/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px; 
+  }

@@ -206,13 +206,21 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
 .header {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   color: #fff;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 60px;
+}
+
+
+.bdrop {
+  background-color: #bbbbbbf2;
+  backdrop-filter: blur(50px);
+  
 }
 
 .logo img {
@@ -230,6 +238,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  
 }
 
 .person-icon {
@@ -237,7 +246,10 @@
   font-size: 40px;
 }
 
-::ng-deep .profile-button .arrow-icon {
+
+/* ///////////////////////////////// */
+
+/* ::ng-deep .profile-button .arrow-icon {
   color: #333;
   font-size: 30px;
   margin-left: 5px;
@@ -247,9 +259,9 @@
 
 ::ng-deep .profile-button .arrow-icon.inverted {
   transform: rotate(180deg);
-}
+}  */
 
-.dropdown-content {
+/* .dropdown-content {
   position: absolute;
   top: calc(100% + 10px);
   right: 0;
@@ -260,11 +272,11 @@
   min-width: 200px;
   z-index: 1;
   border-radius: 4px;
-}
-
-/* .dropdown-content.open {
-  display: FLEX;
 } */
+/* ///////////////////////// */
+ .dropdown-content.open {
+  display: FLEX;
+}
 
 .dropdown-content button {
   display: flex;
