@@ -95,15 +95,17 @@
           <img src="../../assets/headerAssets/ncs_logo.png" alt="Logo">
         </div>
         <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
+          <!-- <div class="profile-dropdown" [matMenuTriggerFor]="#menuTrigger"> -->
+
           <button mat-icon-button class="profile-button" (click)="toggleDropdown()">
             <i class="fas fa-user-circle person-icon"></i>
             <i class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }"></i>
           </button>
           <mat-menu #dropdownMenu="matMenu" class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
-            <button mat-menu-item>
+            <button mat-menu-item (click)="openDialog()">
               <span>Login</span>
             </button>
-            <button mat-menu-item>
+            <button mat-menu-item (click)="openDialog()">
               <span>Register</span>
             </button>
           </mat-menu>

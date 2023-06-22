@@ -1,14 +1,17 @@
 package com.user.service.services;
 
 import com.user.service.entities.User;
+import com.user.service.entities.UserRole;
 import com.user.service.exceptions.UserAlreadyPresentException;
 import com.user.service.exceptions.UserNotFoundException;
 import com.user.service.repositories.IUserRepository;
+import com.user.service.repositories.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 public class IUserServiceImpl implements IUserService{
@@ -16,9 +19,14 @@ public class IUserServiceImpl implements IUserService{
     @Autowired
     IUserRepository userRepository;
 
+    @Autowired
+    RoleRepository roleRepository;
+
+
+
     @Override
-    public User saveUser(User newUser) {
-        Optional<User> optional = this.userRepository.findById(newUser.getUserEmail());
+    public User saveUser(User newUser, Set<UserRole> userRoleSet) {
+        Optional<User> optional = this.userRepository.findByUserEmail(newUser.getUserEmail());
         User adduobj = null;
 
         if(optional.isPresent())
@@ -27,6 +35,12 @@ public class IUserServiceImpl implements IUserService{
         }
         else
         {
+
+            for(UserRole ur: userRoleSet){
+                roleRepository.save(ur.getRole());
+            }
+
+            newUser.get
             adduobj = this.userRepository.save(newUser);
         }
         return adduobj;

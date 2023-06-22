@@ -13,7 +13,7 @@ spring:
 
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: Welcome@1
+    password: Kajal@123
     url: jdbc:mysql://localhost:3306/ridesharingservice
 eureka:
   instance:
