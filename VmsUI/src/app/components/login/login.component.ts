@@ -26,7 +26,7 @@
 
 import { Component, OnInit } from '@angular/core';
 // import {FormControl, FormGroup } from '@angular/forms';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 declare function page(): void;
 
@@ -37,14 +37,14 @@ declare function page(): void;
 })
 export class LoginComponent implements OnInit {
 
+  
+
+  signUpForm!: FormGroup;
+  signInForm!: FormGroup;
+  
   constructor(private fb:FormBuilder){}
 
-  signUpForm = this.fb.group({
-    name: [''],
-    email: [''],
-    password: ['']
-  });
-
+  
   // signUpForm = new FormGroup({
   //   name: new FormControl(''),
   //   email: new FormControl(''),
@@ -53,15 +53,27 @@ export class LoginComponent implements OnInit {
   // });
 
 
-
   ngOnInit(): void {
-    page(); // Call the page() function directly
+    page(); 
 
+    this.signUpForm = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', Validators.required]
+    });
+  
+    this.signInForm = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', Validators.required]
+    });
     
   }
-  // signUp(){
-  //   console.log(this.signUpForm.value);
-    
-  // }
+  signUp(){
+    console.log(this.signUpForm.value); 
+  }
+  
+  signIn(){
+    console.log(this.signInForm.value); 
+  }
 }
 
