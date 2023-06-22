@@ -1,16 +1,16 @@
 package com.share.service;
 
-import com.share.model.Cars;
-import com.share.model.RideShare;
-import com.share.repository.CarRepository;
-import org.springframework.stereotype.Service;
+import com.share.model.Car;
 
 import java.util.List;
+import java.util.Optional;
 
-@Service
-public interface CarService  {
-    List<Cars> findAllByAvailable(boolean available);
+public interface CarService {
+    List<Car> getAllCars();
 
-    public List<Cars> getAvailableCars();
+    Optional<Car> getCarById(int carId);
 
+    Car saveCar(Car car);
+
+    void deleteCar(int carId);
 }

@@ -6,6 +6,9 @@ import org.springframework.stereotype.Repository;
 import com.rent.RentalService.model.Bike;
 
 @Repository
-public interface BikeRepository extends JpaRepository<Bike, Integer>{
+public interface BikeRepository extends JpaRepository<Bike, Long>{
+    public Bike findByName(String Name);
+    
+    public Iterable<Bike> findByAvailableTrue();
 
 }

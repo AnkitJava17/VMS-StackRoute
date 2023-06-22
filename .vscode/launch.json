@@ -14,6 +14,67 @@
             "mainClass": "com.user.service.UserServiceApplication",
             "projectName": "UserService",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AdminServiceApplication<AdminService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.admin.AdminServiceApplication",
+            "projectName": "AdminService",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RentalServiceApplication<RentalService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.rent.RentalService.RentalServiceApplication",
+            "projectName": "RentalService",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RideSharingServiceApplication<RideSharingService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.share.RideSharingServiceApplication",
+            "projectName": "RideSharingService",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-VmsApiGatewayServiceApplication<VMS-APIGatewayService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.api.gateway.VmsApiGatewayServiceApplication",
+            "projectName": "VMS-APIGatewayService",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-VmsConfigServerApplication<VMS-ConfigServer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.config.server.VmsConfigServerApplication",
+            "projectName": "VMS-ConfigServer",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-VmsDiscoveryServiceApplication<VMS-DiscoveryService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.vms.ds.VmsDiscoveryServiceApplication",
+            "projectName": "VMS-DiscoveryService",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]

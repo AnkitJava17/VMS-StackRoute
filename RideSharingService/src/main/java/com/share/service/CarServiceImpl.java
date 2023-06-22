@@ -1,34 +1,38 @@
 package com.share.service;
-import com.share.model.Cars;
-import com.share.model.RideShare;
+
+
+import com.share.model.Car;
 import com.share.repository.CarRepository;
-import com.share.repository.RideShareRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CarServiceImpl implements CarService {
-   @Autowired
-    private  CarRepository carRepository;
-
-
-    @PersistenceContext
-    private EntityManager entityManager;
+    @Autowired
+    private CarRepository carRepository;
 
     @Override
-    public List<Cars> findAllByAvailable(boolean available) {
-        String query = "SELECT c FROM Cars c WHERE c.available = :available";
-        return entityManager.createQuery(query, Cars.class)
-                .setParameter("available", available)
-                .getResultList();
+    public List<Car> getAllCars() {
+        return carRepository.findAll();
     }
+
     @Override
-    public List<Cars> getAvailableCars() {
-        return carRepository.findAllByAvailable(true);
+    public Optional<Car> getCarById(int carId) {
+        return carRepository.findById(carId);
     }
 
 
+
+    @Override
+    public Car saveCar(Car car) {
+        return carRepository.save(car);
+    }
+
+    @Override
+    public void deleteCar(int carId) {
+        carRepository.deleteById(carId);
+    }
 }
