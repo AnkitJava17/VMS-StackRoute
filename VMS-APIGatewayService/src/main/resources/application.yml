@@ -11,14 +11,6 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/v1/users/**
-        - id: rental-service
-          uri: lb://rental-service
-          predicates:
-            - Path=/api/rentals/**
-        - id: ride-sharing-service
-          uri: lb://ride-sharing-service
-          predicates:
-            - Path=/api/rides/**
 eureka:
   instance:
     prefer-ip-address: true

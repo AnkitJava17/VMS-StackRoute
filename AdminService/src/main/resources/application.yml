@@ -1,16 +1,28 @@
 spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
   application:
     name: admin-service
+  datasource:
+    password: Kajal@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/adminservice
   config:
     import: configserver:http://localhost:8086
-
-eureka:
-  client:
-    register-with-eureka: 'true'
-    fetch-registry: 'true'
-    eureka-service-url:
-      default-zone: http://localhost:8761/eureka
-  instance:
-    prefer-ip-address: 'true'
+#eureka:
+#  client:
+#    register-with-eureka: 'true'
+#    fetch-registry: 'true'
+#    eureka-service-url:
+#      default-zone: http://localhost:8761/eureka
+#  instance:
+#    prefer-ip-address: 'true'
 server:
-  port: '8088'
+  port: '8080'

@@ -13,17 +13,10 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 public class User {
-
-//    @Id
-//    private String userId;
-
     @Id
     private String userEmail;
     private String userFullName;
     private String userCity;
     private String userMobile;
     private String userPassword;
-
-//    private LocationInfo locationID;
-//    private PaymentInfo paymentID;
 }

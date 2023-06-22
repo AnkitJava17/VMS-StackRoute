@@ -1,35 +1,76 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-}
-
-/* mat-card {
-    width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-} */
+    background-color: #f2f2f2;
+}
 
-.form-container {
+h2 {
+    text-align: center;
+}
+
+.form-group {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-.form-row {
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.passenger-count {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 5px;
 }
 
-
-mat-form-field {
-    flex: 1;
-    margin-bottom: 0;
-
+.minus-btn,
+.plus-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-button {
-    /* align-self: flex-end; */
-    margin-top: 13px;
+.search-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    .search-btn {
+        width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .passenger-count {
+        flex-direction: row;
+    }
+
 }

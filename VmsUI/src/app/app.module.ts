@@ -28,7 +28,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { RideSharingComponent } from './components/ride-sharing/ride-sharing.component';
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
-import { MatCardModule } from '@angular/material/card';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +64,6 @@ import { MatCardModule } from '@angular/material/card';
     MatNativeDateModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatCardModule
   ],
   providers: [
     AuthService,

@@ -1,31 +1,23 @@
-
 <div class="container">
-    <mat-card>
-        <mat-card-content>
-            <form class="form-container">
-                <div class="form-row">
-                    <mat-form-field appearance="fill">
-                        <mat-label>Source</mat-label>
-                        <input matInput placeholder="Enter source location">
-                    </mat-form-field>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Destination</mat-label>
-                        <input matInput placeholder="Enter destination location">
-                    </mat-form-field>
+    <h2>Book your ride</h2>
+    <form [formGroup]="rideSharing" (ngSubmit)="onSubmit(rideSharing)" class="ride-share">
+        <div>
+            <mat-form-field class="example-full-width">
+                <mat-label>Source</mat-label>
 
-                    <mat-form-field appearance="fill">
-                        <mat-label>Date</mat-label>
-                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                        <mat-datepicker #picker></mat-datepicker>
-                    </mat-form-field>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Passengers</mat-label>
-                        <input matInput type="number" placeholder="Enter number of passengers">
-                    </mat-form-field>
-                    <button mat-raised-button color="primary">Search Rides</button>
-                </div>
-            </form>
-        </mat-card-content>
-    </mat-card>
+                <input type="text" id="ride_source" name="ride_source" placeholder="Source"
+                    formControlName="ride_source" matInput>
+            </mat-form-field>
+
+
+            <input type="text" id="destination" name="destination" placeholder="Destination" required>
+            <input type="date" id="date" name="date" required>
+            <div class="passenger-count">
+
+                <input type="number" id="passenger" name="passenger" min="1" value="1" required>
+
+            </div>
+            <button type="button" class="search-btn">Search</button>
+        </div>
+    </form>
 </div>
