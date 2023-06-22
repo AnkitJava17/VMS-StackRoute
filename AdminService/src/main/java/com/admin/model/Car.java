@@ -15,18 +15,13 @@ public class Car {
 
     private String carModel;
 
-
     private String carBrand;
-
 
     private int carYear;
 
-
     private boolean available;
 
-
     private int carCapacity;
-
 
     private String carImage;
 
