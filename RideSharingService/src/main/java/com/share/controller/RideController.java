@@ -1,6 +1,5 @@
 package com.share.controller;
 
-import com.share.model.Car;
 import com.share.model.RideShare;
 import com.share.service.RideShareService;
 import org.springframework.beans.factory.annotation.Autowired;
