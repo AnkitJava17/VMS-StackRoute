@@ -5,3 +5,5 @@ spring:
     name: ride-sharing-service
   config:
     import: configserver:http://localhost:8086
+  datasource:
+    url: jdbc:mysql://localhost:3306/rentalservice

@@ -15,7 +15,7 @@ import lombok.Setter;
 public class Car {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "car_ID")
     private int carId;
 
