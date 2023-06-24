@@ -14,11 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rent.RentalService.model.Bike;
 import com.rent.RentalService.model.Car;
-import com.rent.RentalService.model.RentVehicle;
 import com.rent.RentalService.service.CarService;
-import com.rent.RentalService.service.RentVehicleServiceImpl;
 
 @RestController
 @RequestMapping("api/rentals")

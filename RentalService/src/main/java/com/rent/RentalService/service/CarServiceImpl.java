@@ -4,16 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.stereotype.Service;
 import org.springframework.stereotype.Service;
 
 import com.rent.RentalService.exception.CarAlreadyExistsException;
 import com.rent.RentalService.exception.CarNotFoundException;
 import com.rent.RentalService.model.Car;
 import com.rent.RentalService.repository.CarRepository;
-
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 
 @Service
 public class CarServiceImpl implements CarService {

@@ -1,6 +1,5 @@
 package com.admin.model;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -34,7 +33,7 @@ public class Car {
     @Column(name = "car_capacity")
     private int carCapacity;
 
-    @Column(name = "car_image")
+
     private String carImage;
 
     @Column(name="car_driver")
