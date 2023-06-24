@@ -49,10 +49,9 @@ public class CarServiceImpl implements CarService {
 		if (car.isEmpty()){
 			throw new CarNotFoundException("Car does not exist");
 		}else{
-			Car modCar = car.get();
-			modCar.setAvailable(upCar.isAvailable());
-			modCar.setCar_image(upCar.getCar_image());
-			return carRepository.save(modCar);
+//			modCar.setAvailable(upCar.isAvailable());
+//			modCar.setCar_image(upCar.getCar_image());
+			return carRepository.save(upCar);
 		}
 	}
 

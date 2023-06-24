@@ -19,7 +19,7 @@ public class RentVehicle {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long rentalId;
 	// car or bike
-	private int type;
+	private String type;
 	private long vehicleId;
 	private Date rentedAt;
 	private Date returnedAt;
