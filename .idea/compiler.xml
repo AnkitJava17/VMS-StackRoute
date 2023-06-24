@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TripDivisionService" />
-        <module name="VMS-APIGatewayService" />
         <module name="RentalService" />
+        <module name="VMS-APIGatewayService" />
         <module name="AdminService" />
         <module name="UserService" />
         <module name="VMS-ConfigServer" />

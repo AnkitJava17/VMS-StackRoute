@@ -26,7 +26,7 @@
           <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <span>or use your email for registration</span>
-        <input required formControlName="name" type="text" placeholder="Name" />
+        <input  formControlName="name" type="text" placeholder="Name" />
         <small *ngIf="signUpForm?.get('name')?.invalid && signUpForm.get('name')?.touched" class="text-danger">Name is required</small>
         <input formControlName="email" type="email" placeholder="Email" />
         <small *ngIf="signUpForm?.get('email')?.invalid && signUpForm.get('email')?.touched" class="text-danger">Invalid email</small>

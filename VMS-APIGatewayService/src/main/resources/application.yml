@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: api-gateway
+  config:
+    import: configserver:http://localhost:8086
   cloud:
     gateway:
       routes:
@@ -12,16 +14,12 @@ spring:
           predicates:
             - Path=/api/v1/users/**
 
-
         - id: ride-sharing-service
           uri: lb://ride-sharing-service
           predicates:
             - Path=/api/rides/**
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
+
+        - id: rental-service
+          uri: lb://rental-service
+          predicates:
+            - Path=/api/rentals/**

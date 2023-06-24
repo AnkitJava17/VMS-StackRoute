@@ -1,21 +1,24 @@
 package com.admin.model;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @Table(name="cars")
+@Entity
 public class Car {
 
-    @Id
+
     @GeneratedValue
     @Column(name = "car_ID")
+    @Id
     private int carId;
 
     @Column(name = "car_model")

@@ -33,6 +33,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCardModule } from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 
+
+
 // import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 // import { ModalModule } from 'mdb-angular-ui-kit/modal';
 
@@ -54,7 +56,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     RideSharingComponent,
     TripDivisionComponent,
     VehicleRentalComponent,
-    AdminComponent
+    AdminComponent,
   ],
   imports: [
     BrowserModule,

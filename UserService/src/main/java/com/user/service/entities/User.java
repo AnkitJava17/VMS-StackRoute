@@ -18,7 +18,7 @@ import java.util.Set;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int userId;
     private String userEmail;
     private String userName;
 //    private String userCity;
