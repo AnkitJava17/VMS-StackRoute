@@ -35,10 +35,11 @@ public class UserServiceApplication implements CommandLineRunner {
 		try {
 			User user = new User();
 			user.setUserEmail("admin@gmail.com");
-			user.setUserFullName("admin");
+			user.setUserName("admin");
 			user.setUserPassword("admin");
-			user.setUserCity("N/A");
+//			user.setUserCity("N/A");
 			user.setUserMobile("8888888888");
+			user.setProfile("default.png");
 
 			Role role = new Role();
 			role.setRoleId(44);
@@ -51,7 +52,7 @@ public class UserServiceApplication implements CommandLineRunner {
 
 			userRoleSet.add(userRole);
 
-			User user1 = this.userService.
+			User user1 = this.userService.saveUser(user,userRoleSet);
 
 
 		}catch (UserAlreadyPresentException e){

@@ -28,6 +28,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { RideSharingComponent } from './components/ride-sharing/ride-sharing.component';
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { MatCardModule } from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -73,7 +74,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSnackBarModule
   
   ],
   providers: [
