@@ -8,6 +8,8 @@ import java.util.Optional;
 public interface CarService {
     List<Car> getAllCars();
 
+    public List<Car> getAvailableCars();
+
     Optional<Car> getCarById(int carId);
 
     Car saveCar(Car car);

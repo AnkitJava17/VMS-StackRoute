@@ -1,76 +1,81 @@
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 75vh;
+    /* background-color: transparent; */
+
+    /* margin-top: 30em; */
 }
 
-h2 {
+
+/* mat-card {
+    width: 400px;
+    padding: 20px;
+} */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+mat-form-field {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+button {
+    margin-top: 1%;
+    /* padding-top: 40px; */
+    /* align-self: flex-end; */
+}
+
+.container {
+    position: relative;
     text-align: center;
 }
 
-.form-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+.background-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    /* Set your desired background color */
+    opacity: 0.5;
+    /* Set the opacity level */
+    mix-blend-mode: multiply;
+    /* Set the blend mode */
 }
 
-input[type="text"],
-input[type="date"],
-input[type="number"] {
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-.passenger-count {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.image-container img {
+    max-width: 100%;
+    height: auto;
 }
 
-.minus-btn,
-.plus-btn {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 50%;
-    background-color: #ccc;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.content {
+    position: relative;
+    z-index: 1;
+    /* Ensure the content is above the blended image */
+    padding-bottom: 20px;
+    /* Add some bottom padding */
 }
 
-.search-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-@media (max-width: 500px) {
-
-    input[type="text"],
-    input[type="date"],
-    input[type="number"],
-    .search-btn {
-        width: 100%;
-    }
-
-    .form-group {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .passenger-count {
-        flex-direction: row;
-    }
-
+.additional-content {
+    margin-top: 40px;
+    /* Adjust the margin as needed */
 }

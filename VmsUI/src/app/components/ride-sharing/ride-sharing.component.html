@@ -1,23 +1,74 @@
+<!-- <div class="container1">
+    <h1>Your pick of rides at low prices</h1>
+    <img src="../../assets/rideShareAssets/final.jpg" class="rideDashImg">
+</div> -->
+
 <div class="container">
-    <h2>Book your ride</h2>
-    <form [formGroup]="rideSharing" (ngSubmit)="onSubmit(rideSharing)" class="ride-share">
-        <div>
-            <mat-form-field class="example-full-width">
-                <mat-label>Source</mat-label>
+    <div class="background-color"></div>
+    <div class="content">
+        <h2>Your pick of rides at low prices</h2>
+        <!-- <button>Button</button> -->
+    </div>
+    <div class="image-container">
+        <img src="../../assets/rideShareAssets/final.jpg" alt="Image">
+    </div>
+    <!-- <div class="additional-content">
+        <h3>Additional Content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec est sed justo maximus luctus.</p>
+    </div> -->
+</div>
 
-                <input type="text" id="ride_source" name="ride_source" placeholder="Source"
-                    formControlName="ride_source" matInput>
-            </mat-form-field>
+<div class="container1">
+    <mat-card>
+        <mat-card-content>
+            <form class="form-container">
+                <div class="form-row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Source</mat-label>
+                        <input type="text" [(ngModel)]="source" matInput placeholder="Enter source location" id="source"
+                            name="source" class="input1">
+                        <!-- <script type="text/javascript">
 
+                            $(document).ready(function () {
+                                var autocomplete;
+                                var id = 'source';
+                                autocomplete = new google.maps.places.Autocomplete((document.getElementById(id)), { types: ['geocode'] })
+                            });
+                        </script> -->
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Destination</mat-label>
+                        <input type="text" [(ngModel)]="destination" matInput placeholder="Enter destination location"
+                            name="destination">
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Date</mat-label>
+                        <input [(ngModel)]="date" matInput [matDatepicker]="picker" placeholder="Choose a date"
+                            name="date">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Passengers</mat-label>
+                        <input type="number" [(ngModel)]="passengers" matInput placeholder="Enter number of passengers"
+                            name="passengers">
+                    </mat-form-field>
+                    <button mat-raised-button color="primary" (click)="searchRide()">Search Rides</button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
 
-            <input type="text" id="destination" name="destination" placeholder="Destination" required>
-            <input type="date" id="date" name="date" required>
-            <div class="passenger-count">
-
-                <input type="number" id="passenger" name="passenger" min="1" value="1" required>
-
-            </div>
-            <button type="button" class="search-btn">Search</button>
-        </div>
-    </form>
+<div *ngIf="searchResult">
+    <h3>Ride Details:</h3>
+    <p>Date: {{ searchResult.date }}</p>
+    <p>Source: {{ searchResult.source }}</p>
+    <p>Destination: {{ searchResult.destination }}</p>
+    <p>Number of Passengers: {{ searchResult.passengers }}</p>
+    <a routerLink="/cars">Car details</a>
+    <!-- <p>Car Details: </p>
+    <ul>
+        <li *ngFor="let car of searchResult.carDetails">{{ car | json }}</li>
+    </ul> -->
 </div>

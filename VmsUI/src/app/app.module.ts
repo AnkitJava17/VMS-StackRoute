@@ -32,6 +32,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { MatCardModule } from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
+import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
 
 
 
@@ -57,6 +58,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     TripDivisionComponent,
     VehicleRentalComponent,
     AdminComponent,
+    RideShareCarsComponent,
   ],
   imports: [
     BrowserModule,
