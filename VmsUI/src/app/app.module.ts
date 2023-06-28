@@ -28,9 +28,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { RideSharingComponent } from './components/ride-sharing/ride-sharing.component';
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { MatCardModule } from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
+import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
+
+
 
 // import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 // import { ModalModule } from 'mdb-angular-ui-kit/modal';
@@ -53,7 +57,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     RideSharingComponent,
     TripDivisionComponent,
     VehicleRentalComponent,
-    AdminComponent
+    AdminComponent,
+    RideShareCarsComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,7 +78,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSnackBarModule
   
   ],
   providers: [

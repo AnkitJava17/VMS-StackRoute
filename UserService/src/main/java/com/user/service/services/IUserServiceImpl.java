@@ -40,7 +40,7 @@ public class IUserServiceImpl implements IUserService{
                 roleRepository.save(ur.getRole());
             }
 
-            newUser.get
+            newUser.getUserRoles().addAll(userRoleSet);
             adduobj = this.userRepository.save(newUser);
         }
         return adduobj;

@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/../VMS-DiscoveryService/pom.xml" />
         <option value="$PROJECT_DIR$/../RentalService/pom.xml" />
         <option value="$PROJECT_DIR$/../VMS-ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/../AuthenticationService/pom.xml" />
+        <option value="$PROJECT_DIR$/../TripDivisionService/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,22 +1,32 @@
 package com.user.service.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
-@Table(name = "users")
+import java.util.HashSet;
+import java.util.Set;
+
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Entity
+@Table(name = "users")
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int userId;
     private String userEmail;
-    private String userFullName;
-    private String userCity;
+    private String userName;
+//    private String userCity;
     private String userMobile;
     private String userPassword;
+    private String profile;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "user")
+    @JsonIgnore
+    private Set<UserRole> userRoles = new HashSet<>();
 }

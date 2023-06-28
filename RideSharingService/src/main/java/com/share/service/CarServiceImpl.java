@@ -20,6 +20,11 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
+    public List<Car> getAvailableCars() {
+        return (List<Car>) carRepository.findByAvailableTrue();
+    }
+
+    @Override
     public Optional<Car> getCarById(int carId) {
         return carRepository.findById(carId);
     }

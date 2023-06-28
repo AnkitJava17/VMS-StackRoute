@@ -63,10 +63,10 @@ public class BikeServiceImpl implements BikeService {
 	public Bike updateBike(Bike bikeUp, long id) throws BikeNotFoundException {
 		Optional<Bike> bike = bikeRepository.findById(id);
 		if (bike.isPresent()){
-			Bike modBike = bike.get();
-			modBike.setAvailable(bikeUp.isAvailable());
-			modBike.setBike_image(bikeUp.getBike_image());
-			return bikeRepository.save(modBike);
+//			Bike modBike = bike.get();
+//			modBike.setAvailable(bikeUp.isAvailable());
+//			modBike.setBike_image(bikeUp.getBike_image());
+			return bikeRepository.save(bikeUp);
 		}else{
 			throw new BikeNotFoundException("Bike Not Present");
 		}

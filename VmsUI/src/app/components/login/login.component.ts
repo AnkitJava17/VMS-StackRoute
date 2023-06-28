@@ -1,32 +1,8 @@
-// import { Component, OnInit } from '@angular/core';
-
-// declare function page(): void;
-
-// @Component({
-//   selector: 'app-login',
-//   templateUrl: './login.component.html',
-//   styleUrls: ['./login.component.css']
-// })
-// export class LoginComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//     this.page();
-//   }
-
-//   page(): void {
-//     if (typeof page === 'function') {
-//       page();
-//     }
-//   }
-
-// }
-
-
 import { Component, OnInit } from '@angular/core';
-// import {FormControl, FormGroup } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { UserService } from 'app/services/user.service';
+import Swal from 'sweetalert2';
 
 declare function page(): void;
 
@@ -37,21 +13,17 @@ declare function page(): void;
 })
 export class LoginComponent implements OnInit {
 
-  
-
   signUpForm!: FormGroup;
   signInForm!: FormGroup;
   
-  constructor(private fb:FormBuilder){}
+  constructor(private fb:FormBuilder, private snack: MatSnackBar, private userService: UserService ){}
 
-  
-  // signUpForm = new FormGroup({
-  //   name: new FormControl(''),
-  //   email: new FormControl(''),
-  //   password: new FormControl('')
-
-  // });
-
+  public user = {
+    name: '',
+    email: '',
+    password: '',
+    mobile: ''
+  };
 
   ngOnInit(): void {
     page(); 
@@ -59,7 +31,8 @@ export class LoginComponent implements OnInit {
     this.signUpForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
+      mobile:['',Validators.required]
     });
   
     this.signInForm = this.fb.group({
@@ -69,7 +42,19 @@ export class LoginComponent implements OnInit {
     
   }
   signUp(){
-    console.log(this.signUpForm.value); 
+    // console.log(this.signUpForm.value); 
+    this.userService.addUser(this.user).subscribe(
+      (data:any)=>{
+        console.log(data);
+        Swal.fire("User Registered! Login!")
+      },
+      (error)=>{
+          console.log(error);
+          this.snack.open(error.error.text,'',{
+            duration:3000,
+          });
+      }
+    );
   }
   
   signIn(){
