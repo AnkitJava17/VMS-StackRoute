@@ -6,6 +6,9 @@ import org.springframework.stereotype.Repository;
 import com.trip.model.TripInfo;
 
 @Repository
-public interface TripRepository extends JpaRepository<TripInfo,Integer> {
-	
+public interface TripInfoRepository extends JpaRepository<TripInfo,Long> {
+	public TripInfo findByName(String trip_name);
+    
+    public Iterable<TripInfo> findByAvailableTrue();
+
 }

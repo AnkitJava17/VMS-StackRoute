@@ -19,7 +19,7 @@ public class TripInfo{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int trip_ID;
+    private long trip_ID;
     private String trip_name;
     private Date start_date;
     private Date end_date;

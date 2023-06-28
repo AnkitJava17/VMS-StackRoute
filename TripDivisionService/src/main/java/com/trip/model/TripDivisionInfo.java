@@ -20,7 +20,7 @@ public class TripDivisionInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-	int division_ID;
+	long division_ID;
 //	TripInfo trip_ID;
 //	User user_ID;
 //	LocationID started_at;
