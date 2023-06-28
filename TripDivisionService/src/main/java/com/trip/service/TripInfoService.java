@@ -5,9 +5,8 @@ import org.springframework.stereotype.Service;
 
 import com.trip.exception.TripInfoNotFoundException;
 import com.trip.model.TripInfo;
-import com.trip.model.Truck;
 
-@Service
+
 public interface TripInfoService {
     
 

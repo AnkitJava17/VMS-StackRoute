@@ -17,7 +17,7 @@ public interface TruckService {
 
     public Truck getTruckById(long truck_ID) throws TruckNotFoundException;
 
-    public Truck getTruckByName(String truckName) throws TruckNotFoundException;
+    // public Truck getTruckByName(String truckName) throws TruckNotFoundException;
 
     public Truck saveTruck(Truck truck);
 

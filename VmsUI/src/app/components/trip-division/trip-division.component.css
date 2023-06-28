@@ -1,0 +1,84 @@
+body {
+    background-image: url("../../../assets/tripAssets/img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+  
+  .example-card {
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .example-header-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 16px;
+  }
+  
+  mat-card-title,
+  mat-card-subtitle {
+    margin: 0;
+  }
+  
+  mat-card-content {
+    padding: 16px;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+  }
+  
+  button[mat-button] {
+    margin-left: 8px;
+  }
+  
+
+  .why-choose-us {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+  }
+  
+  .container2 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .col {
+    flex: 0 0 33.33%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
