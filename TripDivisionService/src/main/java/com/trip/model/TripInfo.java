@@ -1,12 +1,9 @@
 package com.trip.model;
 
+import java.util.Date;
+
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import lombok.*;
-import java.sql.Date;
 
 @Entity
 @Getter
@@ -23,5 +20,7 @@ public class TripInfo{
     private String trip_name;
     private Date start_date;
     private Date end_date;
-    TripDivisionInfo trip_divisons;
+
+    @OneToMany
+    private TripDivisionInfo trip_divisons;
 }

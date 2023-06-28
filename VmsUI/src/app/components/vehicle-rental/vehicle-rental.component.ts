@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./vehicle-rental.component.css']
 })
 export class VehicleRentalComponent {
+  showSideBar(){}
 
+  searchCar(){}
+
+  showPopup(){}
+
+  setPickUp(){}
+
+  setDropOff(){}
 }
