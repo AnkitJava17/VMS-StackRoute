@@ -7,5 +7,5 @@ import java.util.List;
 @Component
 public class RouterValidator {
     public static final List<String> openApiEndpoints=
-            List.of()
+            List.of();
 }

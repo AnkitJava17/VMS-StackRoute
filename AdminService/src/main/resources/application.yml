@@ -1,15 +1,11 @@
 spring:
   application:
-<<<<<<< HEAD
-    name: user-service
-=======
     name: admin-service
   datasource:
     password: Kajal@123
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     url: jdbc:mysql://localhost:3306/adminservice
->>>>>>> af34172eb41225da15b8b500ab27475b1db4241e
   config:
     import: configserver:http://localhost:8086
 eureka:

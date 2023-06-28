@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.trip.model.TripInfo;
 
 @Repository
-public interface TripRepository extends JpaRepository<TripInfo,Integer> {
+public interface TripRepository extends JpaRepository<TripInfo,Long> {
 	
 }
