@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
         console.log(data);
         Swal.fire("User Registered! Login!")
       },
-      (error)=>{
+      (error:any)=>{
           console.log(error);
           this.snack.open(error.error.text,'',{
             duration:3000,

@@ -1,5 +1,49 @@
-<div class="dashboard">
-  <div class="cover-image"></div>
-  <div class="image-2"></div>
-  <!-- Add your dashboard content here -->
+<!-- 
+  <div class="landing-page">
+   
+      <mat-card class="card" (click)="navigateToCard(1)">
+        <h2>Card 1</h2>
+        <p>Click me to navigate to Card 1!</p>
+      </mat-card>
+      <mat-card class="card" (click)="navigateToCard(2)">
+        <h2>Card 2</h2>
+        <p>Click me to navigate to Card 2!</p>
+      </mat-card>
+      <mat-card class="card" (click)="navigateToCard(3)">
+        <h2>Card 3</h2>
+        <p>Click me to navigate to Card 3!</p>
+      </mat-card>
+   
+  </div>
+ -->
+
+ <div class="container">
+  <div class="content">
+    <h1>Title</h1>
+    <p>Left-side content goes here.</p>
+    <a class="button1 btn btn-primary btn-lg" routerLink="/register" role="button">Sign Up</a>
+    <!-- <button type="button" class="button1 btn btn-primary btn-lg"><a routerLink="/register">Sign Up</a></button> -->
+    <button type="button" class="button2 btn btn-outline-primary btn-lg">Show more</button>
+  </div>
+  <div class="image">
+    <img src="../../assets/dashboardAssets/img2.png" alt="Image">
+  </div>
 </div>
+
+<!-- <ul class="grid">
+  <li  class="grid-item"><a routerLink="/ride-sharing">Ride Share</a> </li>
+  <li class="grid-item">Rental Service</li>
+  <li class="grid-item">Truck trip</li>
+</ul> -->
+<mat-list class="grid">
+  <mat-list-item class="grid-item">
+    <a matLine routerLink="/ride-sharing">Ride Share</a>
+  </mat-list-item>
+  <mat-list-item class="grid-item">
+    <span matLine>Rental Service</span>
+  </mat-list-item>
+  <mat-list-item class="grid-item">
+    <span matLine>Truck trip</span>
+  </mat-list-item>
+</mat-list>
+<router-outlet></router-outlet>
