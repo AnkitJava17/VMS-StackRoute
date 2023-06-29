@@ -25,8 +25,8 @@ public class TruckServiceImpl implements TruckService {
 	}
 	
 	@Override
-	public Truck getTruckById(long id) throws TruckNotFoundException {
-		Optional<Truck> truck = truckRepository.findById(id);
+	public Truck getTruckById(long truck_ID) throws TruckNotFoundException {
+		Optional<Truck> truck = truckRepository.findById(truck_ID);
 		if (truck.isEmpty()){
 			throw new TruckNotFoundException("Truck does not exist");
 		}else{
@@ -34,15 +34,15 @@ public class TruckServiceImpl implements TruckService {
 		}
 	}
 
-	@Override
-	public Truck getTruckByName(String truckName) throws TruckNotFoundException {
-		Truck truck = truckRepository.findByName(truckName);
-		if (truck == null){
-			throw new TruckNotFoundException("Truck does not exist");
-		}else{
-			return truck;
-		}
-	}
+	// @Override
+	// public Truck getTruckByName(String truckName) throws TruckNotFoundException {
+	// 	Truck truck = truckRepository.findByName(truckName);
+	// 	if (truck == null){
+	// 		throw new TruckNotFoundException("Truck does not exist");
+	// 	}else{
+	// 		return truck;
+	// 	}
+	// }
 	
 	@Override
 	public Truck updateTruck(Truck upTruck, long truck_ID) throws TruckNotFoundException{
@@ -76,7 +76,7 @@ public class TruckServiceImpl implements TruckService {
 	public void deleteTruck(long truck_ID) throws TruckNotFoundException {
 		Optional<Truck> truck = truckRepository.findById(truck_ID);
 		if (truck.isEmpty()) {
-			throw new TruckNotFoundException("Not FOund");
+			throw new TruckNotFoundException("Not Found");
 		}else {
 			truckRepository.deleteById(truck_ID);
 		}

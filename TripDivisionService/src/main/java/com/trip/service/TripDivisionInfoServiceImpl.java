@@ -17,6 +17,7 @@ public class TripDivisionInfoServiceImpl implements TripDivisionInfoService {
 
     @Override
     public TripDivisionInfo getTripDivisionInfoById(long division_ID) throws TripDivisionInfoNotFoundException {
+        // throw new UnsupportedOperationException("Unimplemented method 'getTripDivisionInfoById'");
         Optional<TripDivisionInfo> tripDivisionInfo = tripDivisionInfoRepository.findById(division_ID);
 		if (tripDivisionInfo.isPresent()){
 			return tripDivisionInfo.get();
