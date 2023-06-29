@@ -80,7 +80,8 @@ import { RideShareComponent } from './components/ride-share/ride-share.component
     MatCardModule,
     MatDialogModule,
     MatSnackBarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule
   ],
   providers: [
     AuthService,
