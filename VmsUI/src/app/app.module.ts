@@ -32,6 +32,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -78,7 +79,8 @@ import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-
     MatCardModule,
     MatDialogModule,
     MatSnackBarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule
   ],
   providers: [
     AuthService,

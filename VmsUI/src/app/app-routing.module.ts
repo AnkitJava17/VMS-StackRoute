@@ -6,7 +6,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
 import { MyBookingsComponent } from './components/my-bookings/my-bookings.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { RegisterComponent } from './components/register/register.component';
+
 import { RideSharingComponent } from './components/ride-sharing/ride-sharing.component';
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
@@ -21,7 +21,6 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'my-bookings', component: MyBookingsComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'register', component: RegisterComponent },
   { path: 'ride-sharing', component: RideSharingComponent },
   { path: 'trip-divison', component: TripDivisionComponent },
   { path: 'vehicle-rental', component: VehicleRentalComponent },
