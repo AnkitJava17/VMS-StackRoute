@@ -34,8 +34,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
 import { MatListModule } from '@angular/material/list';
 
-
-
 // import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 // import { ModalModule } from 'mdb-angular-ui-kit/modal';
 

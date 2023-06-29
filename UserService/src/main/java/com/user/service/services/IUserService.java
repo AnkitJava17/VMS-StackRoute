@@ -12,7 +12,9 @@ public interface IUserService {
 
     List<User> getAllUsers();
 
-    User getUser(String email);
+//    User getUser(String email);
+
+    User getUser(String userName);
 
     User updateUser(User uObj, String email);
 

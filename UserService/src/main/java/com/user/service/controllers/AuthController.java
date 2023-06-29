@@ -1,26 +1,34 @@
 package com.user.service.controllers;
 
+import com.user.service.dto.AuthRequest;
 import com.user.service.entities.Role;
 import com.user.service.entities.User;
 import com.user.service.entities.UserRole;
 import com.user.service.exceptions.UserAlreadyPresentException;
 import com.user.service.exceptions.UserNotFoundException;
 import com.user.service.services.IUserService;
+import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
 
+import java.net.Authenticator;
 import java.util.HashSet;
 import java.util.Set;
 
 @RestController
 @RequestMapping("/api/v1/users")
 @CrossOrigin("*")
-public class UserController {
+public class AuthController {
 
     @Autowired
     private IUserService userService;
+
+//    @Autowired
+//    private AuthenticationManager authenticationManager;
 
     //mapping for registration/sign-up
     @PostMapping("/register")
@@ -43,10 +51,17 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(user);
     }
 
-    @GetMapping("/{email}")
+    @GetMapping("/{userName}")
     @ExceptionHandler(UserNotFoundException.class)
-     public ResponseEntity<User> getUser(@PathVariable String email){
-        User uObj = this.userService.getUser(email);
+     public ResponseEntity<User> getUser(@PathVariable String userName){
+        User uObj = this.userService.getUser(userName);
         return ResponseEntity.ok(uObj);
     }
+
+    //login
+//    @PostMapping("/login")
+//    public String getToken(@RequestBody AuthRequest authRequest){
+//        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));
+//
+//    }
 }

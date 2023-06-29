@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./vehicle-rental.component.css']
 })
 export class VehicleRentalComponent {
+<<<<<<< HEAD
+  showSideBar(){}
+=======
   searchResult: any;
   source: string = "";
   destination: string = "";
@@ -34,5 +37,13 @@ export class VehicleRentalComponent {
       }
     );
   }
+>>>>>>> b6b893039d6a27de0697028ba457421cad61f3bc
 
+  searchCar(){}
+
+  showPopup(){}
+
+  setPickUp(){}
+
+  setDropOff(){}
 }

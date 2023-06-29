@@ -1,3 +1,251 @@
+<<<<<<< HEAD
+<div class="city-box">
+  <div class="city-inner">
+    <div class="city-selection">
+      <div class="city-list">
+        <div class="title">Select your country/city</div>
+
+        <button class="city-box-btn" onclick="confirmCity()">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- city-selection-end -->
+<!-- header start -->
+
+<!-- header end -->
+
+<!-- top-start -->
+<div class="page-container">
+  <div class="top">
+    <div class="selection">
+      <!-- <form onsubmit="searchCar(event)" id="timeForm"> -->
+      <form onsubmit="searchCar()" id="timeForm">
+        <div class="box">
+          <div class="wrap">
+            <div>
+              <select
+                name="selected_city"
+                id="selected_city"
+              >
+                <option value="Select City">....................Select City.................</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Pune">Pune</option>
+                <option value="Delhi">Delhi NCR</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Patna">Patna</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <label for="date"></label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div class="btn-wrapper">
+          <button class="btn-primary">FIND CARS</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- top-end -->
+
+  <!-- promo-start -->
+
+  <div class="promo-container">
+    <div class="promo">
+      <div><img src="images\promoImage1.jpeg" /></div>
+      <div><img src="images\promoImage2.jpg" /></div>
+      <div><img src="images\promoImage3.jpg" /></div>
+      <div><img src="images\promoImage4.jpg" /></div>
+      <div><img src="images\promoImage5.png" /></div>
+    </div>
+  </div>
+
+  <!-- promo-end -->
+
+  <!-- card01-start -->
+
+  <div class="card-container">
+    <div class="card-res">
+      <div class="card-box">
+        <div class="article">
+          <img src="images\card00.png" />
+          <article>
+            <h3 class="title">REFER AND EARN</h3>
+            <p>
+              You earn 500 credits, your friend gets 30% (upto Rs. 2500) off on
+              their first booking of at least 8 hours.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="card-box">
+        <div class="article">
+          <img src="images\login-card.jpg" />
+          <article>
+            <h3 class="title">LOGIN</h3>
+            <p>
+              If you have an upcoming or a live booking, then log in to view
+              your booking.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card01-end -->
+
+  <!-- home-offer-start -->
+
+  <div class="home-offer-section home-offer">
+    <h3>OFFERS</h3>
+    <div class="crousel">
+      <div class="wrapper">
+        <a href="#"><img src="images\offer1.jpg" /></a>
+        <a href="#"><img src="images\offer2.jpg" /></a>
+        <a href="#"><img src="images\offer3.jpg" /></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- home-offer-end -->
+</div>
+
+<!-- pop-up-start -->
+<div class="popup-model show-popup">
+  <div class="bg-transparent"></div>
+  <div class="popup-content slide-up">
+    <div class="close-btn" onclick="closePopup()">
+      <i class="z-close"></i>
+    </div>
+    <div>
+      <div class="trip-options">
+        <div class="city-selection">
+          <h6>Travelling From</h6>
+          <div class="city pointer" onclick="changeCity()">
+            <img src="images\delhincr.png" />
+            <span class="city-name">Delhi NCR</span>
+            <i class="down-icon"></i>
+          </div>
+        </div>
+        <div class="trip-option-select o-1 pointer">
+          <h3>Schedule a Round Trip</h3>
+          <p>Outstation Road Trips, Long Drives, Shopping Malls etc.</p>
+        </div>
+        <div class="trip-option-select o-2 pointer">
+          <h3>One-Way to Nearby Cities</h3>
+          <p>Drop off in a nearby city after a one-way trip.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- pop-up-end -->
+
+<!--home-footer-start  -->
+
+<div class="home-footer">
+  <a class="aPanel" onclick="displayAbout()">
+    About Us
+    <i class="down-icon"></i>
+  </a>
+  <div class="aInner">
+    <ul>
+      <li><a href="">VMS Team</a></li>
+      <li><a href="">VMS Subscription</a></li>
+      <li><a href="">VMS Blog</a></li>
+      <li><a href="">Career @ VMS</a></li>
+    </ul>
+  </div>
+  <div></div>
+  <div class="copyright">
+    © Copyright 2021 VMS India Private Ltd. All rights reserved
+  </div>
+</div>
+
+<!-- home-footer-end -->
+
+<!-- side-bar-start -->
+
+<div class="sidebar-component">
+  <div class="sidebar-ovl"></div>
+  <div class="sidebar">
+    <a href="/login" class="f-1 a-i not-loggedin">
+      <div class="icon">
+        <i class="material-icons">
+          <img src="images\user.png" class="d-img" />
+        </i>
+      </div>
+      <!-- <%if(user===null){%>
+                <span>Login or Signup</span>
+            <%}else{ %>  
+                <span>Log out</span>
+            <% } %> -->
+    </a>
+
+    <!-- <%if(user!==null){%> -->
+    <a href="#" class="user-logged-in">
+      <div class="d-f jc-c">
+        <div class="details f-1 as-fe">
+          <h3 id="side_name"><%=user.name%></h3>
+          <div id="side_email"><%=user.email%></div>
+          <div id="side_phone"><%=user.phone_num%></div>
+        </div>
+      </div>
+    </a>
+    <!-- <%}%>  -->
+
+    <nav class="list">
+      <a href="#" class="item f-1 a-i" onclick="changeCity()">
+        <div class="icon">
+          <i class="material-icons">
+            <img src="images\loc.png" class="d-img" />
+          </i>
+        </div>
+        <div>
+          <div>Change city</div>
+          <div class="sm">Delhi NCR</div>
+        </div>
+      </a>
+      <a href="#" class="item f-1 a-i">
+        <div class="icon">
+          <i class="material-icons">
+            <img src="images\supermiler_menu_logo.png" />
+          </i>
+        </div>
+        <div>
+          <div>Supermiler Club</div>
+        </div>
+      </a>
+      <a href="#" class="item f-1 a-i">
+        <div class="icon">
+          <i class="material-icons">
+            <img src="images\des.png" class="d-img" />
+          </i>
+        </div>
+        <div>
+          <div>Policies</div>
+        </div>
+      </a>
+      <a href="#" class="item f-1 a-i">
+        <div class="icon">
+          <i class="material-icons">
+            <img src="images\call.png" class="d-img" />
+          </i>
+        </div>
+        <div>
+          <div>Help & Support</div>
+        </div>
+        <!-- <div> -->
+      </a>
+    </nav>
+  </div>
+</div>
+=======
 <div class="main-container">
   <div class="banner">
     <div class="banner-content">
@@ -44,3 +292,4 @@
     <p>&copy; 2023 Zoom Car Rental. All rights reserved.</p>
   </footer>
 </div>
+>>>>>>> b6b893039d6a27de0697028ba457421cad61f3bc
