@@ -33,9 +33,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
 
-
-
-
 // import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 // import { ModalModule } from 'mdb-angular-ui-kit/modal';
 
@@ -80,10 +77,6 @@ import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-
     MatDialogModule,
     MatSnackBarModule,
     MatGridListModule
-<<<<<<< HEAD
-
-=======
->>>>>>> b6b893039d6a27de0697028ba457421cad61f3bc
   ],
   providers: [
     AuthService,
