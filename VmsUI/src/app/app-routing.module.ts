@@ -14,7 +14,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  // { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
+  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'dashboard', component: DashboardComponent },

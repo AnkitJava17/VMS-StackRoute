@@ -21,5 +21,4 @@ public interface RentServiceConsumer {
 
     @GetMapping("rentals/rentDetails")
     public List<RentVehicleInfo> getRentDetails();
-
 }

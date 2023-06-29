@@ -22,6 +22,12 @@ public class CarController {
         return carService.getAllCars();
     }
 
+    @GetMapping("/cars/available")
+    public List<Car> getAllAvailableCars() {
+        return carService.getAvailableCars();
+    }
+
+
     //Fetch car Details by carId
     @GetMapping("/{carId}")
     public ResponseEntity<Optional<Car>> getCarById(@PathVariable int carId) {

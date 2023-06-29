@@ -24,7 +24,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { MyBookingsComponent } from './components/my-bookings/my-bookings.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { RegisterComponent } from './components/register/register.component';
 import { RideSharingComponent } from './components/ride-sharing/ride-sharing.component';
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
@@ -53,7 +52,6 @@ import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-
     LoginComponent,
     MyBookingsComponent,
     ProfileComponent,
-    RegisterComponent,
     RideSharingComponent,
     TripDivisionComponent,
     VehicleRentalComponent,
@@ -81,7 +79,10 @@ import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-
     MatDialogModule,
     MatSnackBarModule,
     MatGridListModule
+<<<<<<< HEAD
 
+=======
+>>>>>>> b6b893039d6a27de0697028ba457421cad61f3bc
   ],
   providers: [
     AuthService,
