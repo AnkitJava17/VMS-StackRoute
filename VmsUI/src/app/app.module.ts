@@ -32,6 +32,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
+import { MatList, MatListModule } from '@angular/material/list';
+import { RideShareComponent } from './components/ride-share/ride-share.component';
 
 // import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 // import { ModalModule } from 'mdb-angular-ui-kit/modal';
@@ -55,9 +57,11 @@ import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-
     VehicleRentalComponent,
     AdminComponent,
     RideShareCarsComponent,
+    RideShareComponent,
   ],
   imports: [
     BrowserModule,
+    MatListModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,

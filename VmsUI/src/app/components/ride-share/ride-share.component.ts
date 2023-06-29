@@ -10,13 +10,12 @@ declare global {
     initializeMap: () => void;
   }
 }
-
 @Component({
-  selector: 'app-ride-sharing',
-  templateUrl: './ride-sharing.component.html',
-  styleUrls: ['./ride-sharing.component.css']
+  selector: 'app-ride-share',
+  templateUrl: './ride-share.component.html',
+  styleUrls: ['./ride-share.component.css']
 })
-export class RideSharingComponent implements OnInit {
+export class RideShareComponent implements OnInit{
   searchResult: any;
   source: string = "";
   destination: string = "";
@@ -117,26 +116,3 @@ export class RideSharingComponent implements OnInit {
     });
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

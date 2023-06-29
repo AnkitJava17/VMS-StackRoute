@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx4VpvSh6mgFuyRbGGjoPUV9973fUqW6o"></script>
+
+    <title>Ride Share</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="../../assets/rideShareAssets/road.jpg" alt="Image">
+        </div>
+
+    </div>
+
+    <div class="container1">
+        <div class="form-container">
+            <mat-card>
+                <mat-card-content>
+                    <form (ngSubmit)="calcRoute()">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Source</mat-label>
+                            <input type="text" [(ngModel)]="source" matInput placeholder="Enter source location"
+                                id="source" name="to" class="form-control">
+                        </mat-form-field>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Destination</mat-label>
+                            <input type="text" [(ngModel)]="destination" matInput
+                                placeholder="Enter destination location" name="from" class="forn-control"
+                                id="destination">
+                        </mat-form-field>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Date</mat-label>
+                            <input [(ngModel)]="date" matInput [matDatepicker]="picker" placeholder="Choose a date"
+                                name="date">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Passengers</mat-label>
+                            <input type="number" [(ngModel)]="passengers" matInput
+                                placeholder="Enter number of passengers" name="passengers">
+                        </mat-form-field>
+
+                        <button mat-raised-button color="primary" id="search">Search Rides</button>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div id="googleMap"></div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
