@@ -29,7 +29,7 @@ import { RideSharingComponent } from './components/ride-sharing/ride-sharing.com
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
@@ -79,7 +79,8 @@ import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-
     MatFormFieldModule,
     MatCardModule,
     MatDialogModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    CommonModule
   
   ],
   providers: [
