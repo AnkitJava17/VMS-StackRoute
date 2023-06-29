@@ -29,9 +29,10 @@ import { RideSharingComponent } from './components/ride-sharing/ride-sharing.com
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
+import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
 
 
 
@@ -57,6 +58,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     TripDivisionComponent,
     VehicleRentalComponent,
     AdminComponent,
+    RideShareCarsComponent,
   ],
   imports: [
     BrowserModule,
@@ -77,8 +79,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     MatCardModule,
     MatDialogModule,
-    MatSnackBarModule
-  
+    MatSnackBarModule,
+    MatGridListModule
+
   ],
   providers: [
     AuthService,

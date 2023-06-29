@@ -1,76 +1,267 @@
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "helvetica";
+    background-color: #FFFFF9;
 }
 
-h2 {
+.button-17 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform, opacity;
+    z-index: 0;
+}
+
+.button-17:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+}
+
+.button-17:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.button-17:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+/* Ride photo */
+.container {
+    position: relative;
     text-align: center;
 }
 
-.form-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+
+.image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-input[type="text"],
-input[type="date"],
-input[type="number"] {
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+
+/* ======================================================= */
+
+
+
+/*=========== Ride search form ====================*/
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 78vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+mat-form-field {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+button {
+    margin-top: 1%;
+}
+
+/* =========================================================== */
+
+/* Grid-list */
+.column {
+    float: left;
+    width: 30%;
     padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: 20px;
+
 }
 
-.passenger-count {
+.row {
+    background-color: #FFFFF9;
+}
+
+.row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icons img {
+    height: 70px;
+    width: 70px;
+}
+
+.icons p {
+    font-size: small;
+}
+
+
+
+/* learn-more */
+
+.learn-more {
+    background-color: #007DFE;
     display: flex;
     align-items: center;
-    gap: 5px;
+    color: white;
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    border: 1px black;
+    box-shadow: 100px rgb(148, 66, 66);
 }
 
-.minus-btn,
-.plus-btn {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 50%;
-    background-color: #ccc;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+
+.learn-more .image-container {
+    flex: 1;
+    padding: 20px;
 }
 
-.search-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
+.content {
+    flex: 1;
+    padding: 20px;
 }
 
-@media (max-width: 500px) {
+.learn-more .people img {
+    height: 25em;
+    width: 25em;
+    padding: 30px;
 
-    input[type="text"],
-    input[type="date"],
-    input[type="number"],
-    .search-btn {
+    margin: 30px;
+}
+
+/* help-centre */
+.help-centre h1 {
+    position: relative;
+    left: 35%;
+}
+
+.help-centre .row {
+    padding-left: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    /* align-items: center;
+    align-content: center; */
+}
+
+.help-centre .column {
+    width: 40%;
+}
+
+
+@media screen and (max-width:767px) {
+
+    /*=========== Ride search form ====================*/
+    .container1 {
+        align-items: center;
+        padding-top: 80vh;
+    }
+
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    mat-form-field {
         width: 100%;
     }
 
-    .form-group {
-        flex-direction: column;
+
+    button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+
+    /*=========== Ride search form ====================*/
+    .container1 {
         align-items: center;
+        padding-top: 95vh;
     }
 
-    .passenger-count {
-        flex-direction: row;
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
     }
 
+
+    mat-form-field {
+        width: 100%;
+    }
+
+
+    button {
+        margin-top: 10px;
+    }
 }
