@@ -1,9 +1,6 @@
 package com.rent.RentalService.model;
 
-import java.util.Date;
-
 import jakarta.persistence.*;
-import lombok.*;
 
 
 @Entity

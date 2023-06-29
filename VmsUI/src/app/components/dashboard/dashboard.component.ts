@@ -11,9 +11,14 @@ export class DashboardComponent {
   constructor(private routerService:RouterService){
     
   }
-  navigateToCard(num: number){
-    if (num == 1){
-      this.routerService.toShare();
-    }
+  rent(){
+    this.routerService.toRent();
+  }
+  ride(){
+    this.routerService.toRideShare();
+  }
+  trip(){
+    this.routerService.toTripDivision();
   }
 }
+

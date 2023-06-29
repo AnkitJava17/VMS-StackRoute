@@ -1,0 +1,118 @@
+
+
+    <div class="container">
+        <div class="image-container">
+            <img src="../../assets/rideShareAssets/road.jpg" alt="Image">
+        </div>
+        <div id="googleMap"></div>
+    </div>
+
+
+    <div class="row ">
+        <div class="column icons">
+
+            <img src="../../assets/rideShareAssets/col1.png" alt="Image">
+
+            <h5>Your pick of rides at low prices</h5>
+            <p>No matter where you’re going, or carpool, find the perfect ride from our wide range of destinations and
+                routes at low prices.</p>
+        </div>
+        <div class="column icons">
+
+            <img src="../../assets/rideShareAssets/col2.png" alt="Image">
+
+            <h5>Trust who you travel with</h5>
+            <p>We take the time to get to know each of our members . We check reviews, profiles and IDs, so
+                you know who you’re travelling with and can book your ride at ease on our secure platform.</p>
+        </div>
+        <div class="column icons">
+
+            <img src="../../assets/rideShareAssets/col3.png" alt="Image">
+
+            <h5>Scroll, click, tap and go!</h5>
+            <p>Booking a ride has never been easier! Thanks to our simple app powered by great technology, you can book
+                a
+                ride close to you in just minutes.</p>
+        </div>
+    </div>
+    <div class="learn-more">
+        <div class="people">
+            <img src="../../assets/rideShareAssets/people.png" alt="Image">
+        </div>
+        <div class="content">
+            <!-- Content goes here -->
+            <h4>Your safety is our priority</h4>
+            <p>At BlaBlaCar, we're working hard to make our platform as secure as it can be. But when scams do happen,
+                we
+                want you to know exactly how to avoid and report them. Follow our tips to help us keep you safe.</p>
+            <!-- HTML !-->
+            <button class="button-17" role="button">Learn More</button>
+
+
+        </div>
+
+    </div>
+    <div class="help-centre">
+        <h1>Carpool help centre</h1>
+        <div class="row">
+            <div class="column">
+                <h2>How do I book a carpool ride?</h2>
+                <p>You can book a carpool ride on blablacar.com. Simply search for your destination, choose the date you
+                    want to travel and pick the carpool that suits you best! </p>
+            </div>
+            <div class="column">
+                <h2>How much does a carpool ride cost?</h2>
+                <p>The costs of a carpool ride can vary greatly, and depend on factors like distance, time of departure,
+                    the
+                    demand of that ride and more. </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2>How do I cancel my carpool ride?</h2>
+                <p>If you have a change of plans, you can always cancel your carpool ride from the ‘My Bookings’ section
+                    of
+                    our website. The sooner you cancel, the better. That way the driver has time to accept new
+                    passengers.
+                </p>
+            </div>
+            <div class="column">
+                <h2>If you cannot log in or sign up</h2>
+                <p>If you closed your account due to negative ratings, your re-registration with the same phone number
+                    or
+                    email will be blocked. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h2>How do I cancel my carpool ride?</h2>
+                <p>If you have a change of plans, you can always cancel your carpool ride from the ‘My Bookings’ section
+                    of
+                    our website. The sooner you cancel, the better. That way the driver has time to accept new
+                    passengers.
+                </p>
+            </div>
+            <div class="column">
+                <h2>If you cannot log in or sign up</h2>
+                <p>If you closed your account due to negative ratings, your re-registration with the same phone number
+                    or
+                    email will be blocked. </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div *ngIf="searchResult">
+        <h3>Ride Details:</h3>
+        <p>Date: {{ searchResult.date }}</p>
+        <p>Source: {{ searchResult.source }}</p>
+        <p>Destination: {{ searchResult.destination }}</p>
+        <p>Number of Passengers: {{ searchResult.passengers }}</p>
+        <a routerLink="/cars">Car details</a>
+        <!-- <p>Car Details: </p>
+    <ul>
+        <li *ngFor="let car of searchResult.carDetails">{{ car | json }}</li>
+    </ul> -->
+    </div>

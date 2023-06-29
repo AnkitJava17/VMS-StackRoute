@@ -1,1 +1,14 @@
-<p>my-bookings works!</p>
+<div class="container">
+    <h3>Bookings</h3>
+    <div class="car-container">
+        <mat-card *ngFor="let booking of bookings">
+            <mat-card-content>
+                <p>Brand: {{ booking.bookingId }}</p>
+                <p>Model: {{ booking.bookingType }}</p>
+                <p>Year: {{ booking.bookingDate }}</p>
+                <p>Driver Name: {{ booking.bookingAmount }}</p>
+
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
