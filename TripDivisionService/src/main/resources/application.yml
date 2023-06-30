@@ -4,4 +4,4 @@ spring:
   application:
     name: trip-division-service
   config:
-    import: configserver:http://localhost:8086
+    import: configserver:http://localhost:8086"

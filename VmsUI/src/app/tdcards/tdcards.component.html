@@ -1,0 +1,33 @@
+<div class="note-container">
+
+    <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Take A Note !!!
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+    
+        <div class="note-form">    
+
+        <form class="note-form" [formGroup]="noteForm" (ngSubmit)="addNote(noteForm)">
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Note Title</mat-label>
+              
+              <input matInput placeholder="Note Title" formControlName="noteTitle">
+            
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Note Description</mat-label>
+              
+              <textarea matInput placeholder="Note Description" formControlName="noteDesc"></textarea>
+            
+            </mat-form-field>
+            
+            <button class="btn btn-primary">Add Note</button>
+        
+        </form>
+    </div>    
+    </mat-expansion-panel>
+</div>
