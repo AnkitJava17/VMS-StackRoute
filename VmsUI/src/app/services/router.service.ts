@@ -11,6 +11,17 @@ export class RouterService {
   toShare(){
     this.router.navigate(['ride-sharing']);
   }
+
+  toRent(){
+    this.router.navigate(['rent']);
+  }
+  toRideShare(){
+    this.router.navigate(['ride-sharing']);
+  }
+
+  toTripDivision(){
+    this.router.navigate(['trip-division']);
+  }
 }
 // { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
 // { path: 'about-us', component: AboutUsComponent },
@@ -22,5 +33,5 @@ export class RouterService {
 // { path: 'register', component: RegisterComponent },
 // { path: 'ride-sharing', component: RideSharingComponent },
 // { path: 'trip-divison', component: TripDivisionComponent },
-// { path: 'vehicle-rental', component: VehicleRentalComponent },
+// { path: 'vehiclerental', component: VehicleRentalComponent },
 // { path: 'admin', component: AdminComponent },

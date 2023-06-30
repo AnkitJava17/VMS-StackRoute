@@ -24,9 +24,10 @@ const routes: Routes = [
   { path: 'my-bookings', component: MyBookingsComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'ride-sharing', component: RideSharingComponent },
-  { path: 'trip-divison', component: TripDivisionComponent },
+  { path: 'trip-division', component: TripDivisionComponent },
   { path: 'ride-share', component: RideShareComponent },
   { path: 'admin', component: AdminComponent },
+  {path: 'rent', component:VehicleRentalComponent}
   { path: 'footer', component: FooterComponent },
   { path: 'admin-ride-share', component: AdminRideShareComponent }
 ];
