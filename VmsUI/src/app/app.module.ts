@@ -34,7 +34,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
 import { MatList, MatListModule } from '@angular/material/list';
 import { RideShareComponent } from './components/ride-share/ride-share.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { AdminRideShareComponent } from './components/admin-ride-share/admin-ride-share.component';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
 // import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 // import { ModalModule } from 'mdb-angular-ui-kit/modal';
 
@@ -58,6 +61,7 @@ import { RideShareComponent } from './components/ride-share/ride-share.component
     AdminComponent,
     RideShareCarsComponent,
     RideShareComponent,
+    AdminRideShareComponent,
   ],
   imports: [
     BrowserModule,
@@ -81,7 +85,9 @@ import { RideShareComponent } from './components/ride-share/ride-share.component
     MatDialogModule,
     MatSnackBarModule,
     MatGridListModule,
-    MatListModule
+    MatListModule,
+    MatCheckboxModule,
+    MatSidenavModule
   ],
   providers: [
     AuthService,

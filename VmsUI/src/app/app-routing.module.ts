@@ -12,6 +12,8 @@ import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rent
 import { AdminComponent } from './components/admin/admin.component';
 import { AppComponent } from './app.component';
 import { RideShareComponent } from './components/ride-share/ride-share.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AdminRideShareComponent } from './components/admin-ride-share/admin-ride-share.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
@@ -25,6 +27,8 @@ const routes: Routes = [
   { path: 'trip-divison', component: TripDivisionComponent },
   { path: 'ride-share', component: RideShareComponent },
   { path: 'admin', component: AdminComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'admin-ride-share', component: AdminRideShareComponent }
 ];
 
 @NgModule({

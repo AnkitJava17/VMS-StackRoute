@@ -1,0 +1,37 @@
+<form (ngSubmit)="uploadImage()">
+    <input type="file" (change)="handleFileInput($event)">
+    <button type="submit">Upload</button>
+</form>
+
+<div class="form-container">
+    <form (ngSubmit)="saveCar()" #carForm="ngForm">
+        <mat-form-field>
+            <mat-label>Car Model</mat-label>
+            <input matInput type="text" id="carModel" name="carModel" [(ngModel)]="car.carModel" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Car Brand</mat-label>
+            <input matInput type="text" id="carBrand" name="carBrand" [(ngModel)]="car.carBrand" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Car Year</mat-label>
+            <input matInput type="number" id="carYear" name="carYear" [(ngModel)]="car.carYear" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Car Capacity</mat-label>
+            <input matInput type="number" id="carCapacity" name="carCapacity" [(ngModel)]="car.carCapacity" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Car Driver</mat-label>
+            <input matInput type="text" id="carDriver" name="carDriver" [(ngModel)]="car.carDriver" required>
+        </mat-form-field>
+        <br>
+        <mat-checkbox type="checkbox" [(ngModel)]="car.available" name="available">Car Available</mat-checkbox>
+        <br><br>
+        <button mat-raised-button color="primary" type="submit">Save Car Details</button>
+    </form>
+</div>

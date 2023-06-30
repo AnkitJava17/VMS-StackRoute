@@ -4,6 +4,10 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+import { MatDialog, MatDialogRef, MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { NgIf } from '@angular/common';
+
 declare const google: any;
 declare global {
   interface Window {
@@ -17,6 +21,17 @@ declare global {
   styleUrls: ['./ride-sharing.component.css']
 })
 export class RideSharingComponent implements OnInit {
+  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+    this.dialog.open(DialogAnimationsExampleDialog, {
+      width: '400px',
+      height: '500px',
+      enterAnimationDuration,
+      exitAnimationDuration,
+    });
+  }
+
+
+
   searchResult: any;
   source: string = "";
   destination: string = "";
@@ -27,7 +42,7 @@ export class RideSharingComponent implements OnInit {
   directionsService: any;
   directionsDisplay: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, public dialog: MatDialog) { }
 
   ngOnInit(): void {
     window.initializeMap = () => {
@@ -118,7 +133,37 @@ export class RideSharingComponent implements OnInit {
   }
 }
 
+@Component({
+  selector: 'dialog-animations-example-dialog',
+  templateUrl: 'dialog-animations-example-dialog.html',
+  standalone: true,
+  imports: [MatDialogModule, MatButtonModule],
+})
+export class DialogAnimationsExampleDialog {
+  constructor(public dialogRef: MatDialogRef<DialogAnimationsExampleDialog>, private http: HttpClient) { }
+  searchResult: any;
+  date: string = "";
+  passengers: number = 0;
+  searchRide() {
+    const apiUrl = 'http://localhost:8083/api/rides/getAllCars';
+    const queryParams = `?date=${this.date}&passengers=${this.passengers}`;
 
+    this.http.get(apiUrl + queryParams).subscribe(
+      (response: any) => {
+        this.searchResult = {
+          date: this.date,
+          passengers: this.passengers,
+          carDetails: response
+        };
+        console.log(this.searchResult);
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  }
+
+}
 
 
 

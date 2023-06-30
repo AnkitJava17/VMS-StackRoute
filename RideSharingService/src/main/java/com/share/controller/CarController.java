@@ -35,6 +35,7 @@ public class CarController {
         return ResponseEntity.status(HttpStatus.OK).body(car);
     }
 
+    
     //Insert car details
     @PostMapping("/addCars")
     public ResponseEntity<Car> saveCar(@RequestBody Car car) {
