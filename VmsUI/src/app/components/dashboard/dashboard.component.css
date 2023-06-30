@@ -1,29 +1,220 @@
-.dashboard {
+/* .dashboard {
   padding: 0px;
 }
 
 
-  
-  .cover-image {
-    /* background-image: url("/assets/dashboardAssets/car_cover2.jpg");  */
+   */
+  /* .cover-image {
+    background-image: url("/assets/dashboardAssets/car_cover2.jpg"); 
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/dashboardAssets/car_cover2.jpg");
 
     background-size: cover;
     background-position: center;
-    height: 600px; 
-  }
+    height: 600px;  */
+  /* } */
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     .cover-image {
       background-position: top;
       height: 500px;
-    }
+    } */
+  /* } */
+  
+
+  /* .landing-page{
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background-image: url("/assets/dashboardAssets/cover2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    height: 100vh;
+  }
+  
+  
+  .card {
+    width: auto;
+    height: auto;
+   
+    margin: 0 10px;
+    background: transparent;
+    border-radius: 30%;
+    text-align: center;
+    cursor: pointer;
+  } */
+body{
+ /* background-color: #CAE7F5; */
+ margin: 0%;
+ padding: 0%;
+}
+  /* img container  */
+  .container {
+    /* background-color: #CAE7F5; */
+    /* display: flex; */
+    /* margin-top: vh; */
+    margin-top: 0;
+  }
+/* .button1 {
+    margin-right: 20px;
+   
+  } */
+  /* .content {
+    flex: 1;
+    padding: 20px;
+   
+  } */
+  
+  /* .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  
+
+/* .content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* margin-top: 10vh; */
+  position: relative;
+}
+
+.content {
+  /* padding: 20px; */
+  /* text-align: right; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image-container img {
+  width: 200vh;
+height: 90vh;
+}
+
+.button1 {
+  margin-right: 20px;
+}
+  /* .image img {
+    width: 200vh;
+    height: 100vh;
+    margin:0%;
+    padding-left: 10px;
+  } */
+  /* ============================================== */
+
+  /* card */
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 260px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 220px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    color:black;
+    background: white;
+    box-shadow: inset 0px 0px 0px 1px white;
+    transform: translate(0, 0);
+    transition: transform 0.14s ease-in, text-shadow 0.1s ease-in;
+    will-change: transform;
+    cursor: pointer;
+  }
+  .grid-item img{
+height: 220px;
+width: auto;
+size: cover;
+  }
+  
+  .grid-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: none;
+    border-radius: 3px;
+    box-shadow: 0 10px 24px 0px rgba(0, 0, 0, 0.02), 0 8px 20px -2px rgba(0, 0, 0, 0.06), 0 6px 10px -6px rgba(0, 0, 0, 0.10);
+    transition: opacity 0.1s ease-in;
+    will-change: opacity;
+    opacity: 0;
+  }
+  
+  .grid-item:hover {
+    transform: translate(0, -20px);
+  }
+  
+  .grid-item:hover:before {
+    opacity: 1;
   }
   
 
-  .image-2 {
-    background-image: url("/assets/dashboardAssets/img1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 250px; 
+
+
+
+
+
+
+
+
+  /* Adjust layout for screens smaller than 768px */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    margin-top: 10vh;
   }
+
+  .button1 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Adjust layout for screens larger than 1200px */
+@media (min-width: 1200px) {
+  .container {
+    margin-top: 30vh;
+  }
+}
+
+
+

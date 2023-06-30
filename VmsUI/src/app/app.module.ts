@@ -24,7 +24,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { MyBookingsComponent } from './components/my-bookings/my-bookings.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { RegisterComponent } from './components/register/register.component';
 import { RideSharingComponent } from './components/ride-sharing/ride-sharing.component';
 import { TripDivisionComponent } from './components/trip-division/trip-division.component';
 import { VehicleRentalComponent } from './components/vehicle-rental/vehicle-rental.component';
@@ -36,9 +35,12 @@ import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-
 import { TdcardsComponent } from './tdcards/tdcards.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 
+import { MatList, MatListModule } from '@angular/material/list';
+import { RideShareComponent } from './components/ride-share/ride-share.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { AdminRideShareComponent } from './components/admin-ride-share/admin-ride-share.component';
 
-
-
+import { MatSidenavModule } from '@angular/material/sidenav';
 // import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 // import { ModalModule } from 'mdb-angular-ui-kit/modal';
 
@@ -56,16 +58,17 @@ import {MatExpansionModule} from '@angular/material/expansion';
     LoginComponent,
     MyBookingsComponent,
     ProfileComponent,
-    RegisterComponent,
     RideSharingComponent,
     TripDivisionComponent,
     VehicleRentalComponent,
     AdminComponent,
     RideShareCarsComponent,
-    TdcardsComponent,
+    RideShareComponent,
+    AdminRideShareComponent,
   ],
   imports: [
     BrowserModule,
+    MatListModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -85,8 +88,10 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatDialogModule,
     MatSnackBarModule,
     MatGridListModule,
-    MatExpansionModule
-
+    MatExpansionModule,
+    MatListModule,
+    MatCheckboxModule,
+    MatSidenavModule
   ],
   providers: [
     AuthService,

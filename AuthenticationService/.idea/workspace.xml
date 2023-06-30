@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a65caa47-9a4e-4caf-9601-c70f565bdef0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../AdminService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AdminService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RideSharingService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../RideSharingService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/user/service/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/user/service/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/user/service/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/user/service/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/user/service/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/user/service/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/user/service/services/ILocationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/java/com/user/service/services/IUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/java/com/user/service/services/IUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../UserService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VMS-APIGatewayService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VMS-APIGatewayService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VMS-APIGatewayService/src/main/java/com/api/gateway/security/RouterValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VMS-APIGatewayService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../VMS-APIGatewayService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/.vscode/extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/.vscode/extensions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/.vscode/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/.vscode/tasks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/about-us/about-us.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/about-us/about-us.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/about-us/about-us.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/about-us/about-us.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/about-us/about-us.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/about-us/about-us.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/admin/admin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/admin/admin.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/admin/admin.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/admin/admin.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/admin/admin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/admin/admin.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/contact-us/contact-us.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/contact-us/contact-us.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/contact-us/contact-us.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/contact-us/contact-us.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/contact-us/contact-us.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/contact-us/contact-us.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/dashboard/dashboard.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/dashboard/dashboard.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/dashboard/dashboard.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/dashboard/dashboard.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/dashboard/dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/footer/footer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/footer/footer.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/header/header.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/header/header.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/login/login.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/login/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/login/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/my-bookings/my-bookings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/my-bookings/my-bookings.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/my-bookings/my-bookings.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/my-bookings/my-bookings.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/my-bookings/my-bookings.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/my-bookings/my-bookings.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/profile/profile.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/profile/profile.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/register/register.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/ride-sharing.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/ride-sharing.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/ride-sharing.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/ride-sharing.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/ride-sharing.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/ride-sharing.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/ride-sharing.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/ride-sharing.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/rides.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/ride-sharing/rides.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/trip-division/trip-division.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/trip-division/trip-division.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/trip-division/trip-division.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/trip-division/trip-division.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/trip-division/trip-division.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/trip-division/trip-division.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/vehicle-rental/vehicle-rental.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/vehicle-rental/vehicle-rental.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/vehicle-rental/vehicle-rental.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/vehicle-rental/vehicle-rental.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/components/vehicle-rental/vehicle-rental.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/components/vehicle-rental/vehicle-rental.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/services/auth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/services/auth.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/app/services/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/app/services/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/assets/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/assets/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/custom-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/custom-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VmsUI/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VmsUI/tsconfig.spec.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RccVCpjkVsm45EuE5BU64gg3kZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="AuthenticationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="AuthenticationService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.authenticationservice.AuthenticationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a65caa47-9a4e-4caf-9601-c70f565bdef0" name="Changes" comment="" />
+      <created>1687552833025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687552833025</updated>
+      <workItem from="1687552834647" duration="74000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -26,7 +26,7 @@ public class IUserServiceImpl implements IUserService{
 
     @Override
     public User saveUser(User newUser, Set<UserRole> userRoleSet) {
-        Optional<User> optional = this.userRepository.findByUserEmail(newUser.getUserEmail());
+        Optional<User> optional = this.userRepository.findByUserName(newUser.getUserName());
         User adduobj = null;
 
         if(optional.isPresent())
@@ -52,8 +52,8 @@ public class IUserServiceImpl implements IUserService{
     }
 
     @Override
-    public User getUser(String email) {
-        Optional<User> userOptional = userRepository.findByUserEmail(email);
+    public User getUser(String userName) {
+        Optional<User> userOptional = userRepository.findByUserName(userName);
 
         User uObj = null;
         if(userOptional.isPresent())
