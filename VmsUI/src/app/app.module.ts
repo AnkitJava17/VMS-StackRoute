@@ -32,6 +32,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RideShareCarsComponent } from './components/ride-share-cars/ride-share-cars.component';
+import { TdcardsComponent } from './tdcards/tdcards.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 import { MatList, MatListModule } from '@angular/material/list';
 import { RideShareComponent } from './components/ride-share/ride-share.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -97,6 +100,7 @@ import { DashServicesComponent } from './components/dash-services/dash-services.
     MatDialogModule,
     MatSnackBarModule,
     MatGridListModule,
+    MatExpansionModule,
     MatListModule,
     MatCheckboxModule,
     MatSidenavModule,

@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Truck Website</title>
+  <title>Truck Website</title> -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/@angular/material@13.0.0-pre.1@pre/bundles/mat-basic-theme.css" rel="stylesheet"> -->
   <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-</head>
-<!-- 
+<!-- </head>
+
 <body>
   <div class="container">
     <mat-card class="example-card">
@@ -28,10 +28,10 @@
         <button mat-button>SHARE</button>
       </mat-card-actions>
     </mat-card>
-  </div>
+  </div> -->
 
 
-  <section class="why-choose-us">
+  <!-- <section class="why-choose-us">
     <div class="container2">
       <h2>Why Choose Us</h2>
       <div class="row">
@@ -49,14 +49,14 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   
 
-</body> -->
+<!-- </body> -->
 
 
-<body>
+<!-- <body>
  
   <div class="wrapper">
     <div class="header">Avengers Responsive Cards UI Design</div>
@@ -137,6 +137,38 @@
     </div>
   </div>  
   
-  </body>
+  </body> -->
 
-</html>
+<!-- </html> -->
+<body>
+  
+  <div class="wholepage">
+<div class="container">
+  <div class="image-section">
+    <!-- <img src="../../../assets/tripAssets/img1.jpg" class="background-image" alt="Background Image" /> -->
+  
+    <div class="arrow-container">
+      <a (click)="scrollToCards()">
+        <i class="material-icons arrow-icon">keyboard_arrow_down</i>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="cards-section" id="cardsSection">
+    <div class="cards-container">
+      <mat-card *ngFor="let card of cards" class="card">
+        <img src="{{ card.image }}" class="card-image" alt="Card Image" />
+        <mat-card-content>
+          <mat-card-title>{{ card.title }}</mat-card-title>
+          <mat-card-subtitle>{{ card.subtitle }}</mat-card-subtitle>
+          <p class="card-description">{{ card.description }}</p>
+          <!-- <button mat-button>Button</button> -->
+          <button mat-raised-button class="custom-button">Choose</button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
