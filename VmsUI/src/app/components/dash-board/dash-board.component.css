@@ -1,0 +1,228 @@
+/* banner section start */
+
+.banner_section {
+    width: 100%;
+    float: left;
+    background-image: url(/../assets/dashboardAssets/banner-bg.png);
+    height: auto;
+    background-size: 100%;
+    padding: 200px 0px 160px 0px;
+}
+
+.call_text_main {
+    background-color: #fe5b29;
+}
+
+.banner_taital_main {
+    width: 100%;
+    float: left;
+}
+
+.padding_left_15 {
+    color: white;
+    font-size: 30px;
+    font-weight: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.banner_taital {
+    width: 100%;
+    font-size: 60px;
+    color: #2c2c2c;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+.banner_text {
+    width: 80%;
+    float: left;
+    font-size: 16px;
+    color: #403f3f;
+    margin: 20px 0px 0px 0px;
+}
+
+.btn_main {
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+}
+
+.contact_bt {
+    width: 175px;
+    float: left;
+}
+
+.contact_bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: #fe5b29;
+    color: #fcf8f8;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact_bt a:hover {
+    color: #fcf8f8;
+    background-color: #363636;
+}
+
+.contact_bt.active a {
+    color: #fcf8f8;
+    background-color: #363636;
+    margin-left: 10px;
+}
+
+.banner_img {
+    width: 100%;
+    float: left;
+    text-align: center;
+    display: none;
+}
+
+#banner_slider a.carousel-control-prev {
+    left: -120px;
+    top: 155px;
+    right: initial;
+}
+
+#banner_slider a.carousel-control-next {
+    right: initial;
+    top: 100px;
+    left: -120px;
+    color: #fcf8f8;
+    background-color: #363636;
+}
+
+#banner_slider .carousel-control-next,
+#banner_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    opacity: 1;
+    font-size: 30px;
+    color: #fcf8f8;
+    background-color: #fe5b29;
+}
+
+#banner_slider .carousel-control-next:focus,
+#banner_slider .carousel-control-next:hover,
+#banner_slider .carousel-control-prev:focus,
+#banner_slider .carousel-control-prev:hover {
+    color: #fcf8f8;
+    background-color: #363636;
+}
+
+/* banner section end */
+
+
+/* choose section start */
+
+.choose_section {
+    width: 100%;
+    float: left;
+    background-color: black;
+    height: auto;
+    padding: 40px 0px;
+}
+
+.choose_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #fefefd;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.choose_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+}
+
+.icon_1 {
+    width: 100%;
+    float: left;
+    min-height: 50px;
+}
+
+.safety_text {
+    width: 100%;
+    float: left;
+    color: #fefefd;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.ipsum_text {
+    width: 100%;
+    float: left;
+    color: #fefefd;
+    font-size: 16px;
+    margin: 0px;
+}
+
+/* choose section end */
+
+
+.custom-carousel {
+    /* Add custom styles to the carousel container */
+    /* Example styles: */
+
+    max-width: 800px;
+    margin-top: 20vh;
+}
+
+.item {
+    /* Add custom styles to each carousel item */
+    /* Example styles: */
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-img-top {
+    /* Add custom styles to the carousel item image */
+    /* Example styles: */
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    /* Add custom styles to the carousel item card body */
+    /* Example styles: */
+    padding: 10px;
+}
+
+.card-title {
+    /* Add custom styles to the carousel item card title */
+    /* Example styles: */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    /* Add custom styles to the carousel item card text */
+    /* Example styles: */
+    font-size: 14px;
+}
+
+.btn-primary {
+    /* Add custom styles to the carousel item button */
+    /* Example styles: */
+    background-color: #fe5b29;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    /* Add custom hover styles to the carousel item button */
+    /* Example styles: */
+    background-color: #811f01;
+}

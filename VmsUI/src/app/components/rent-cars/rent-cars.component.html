@@ -1,0 +1,19 @@
+<div class="container">
+    <h3>Available Cars</h3>
+    <div class="car-container">
+        <mat-card *ngFor="let rentCars of availableCars">
+            <mat-card-content>
+                <p>Name: {{ rentCars.name }}</p>
+                <p>Model: {{ rentCars.model }}</p>
+                <p>Brand: {{ rentCars.brand}}</p>
+                <p> Year: {{ rentCars.year }}</p>
+                <p>Image: {{ rentCars.car_image }}</p>
+                <p>Capacity: {{ rentCars.capacity }}</p>
+                <p>hourlyCharge: {{ rentCars.hourlyCharge }}</p>
+            </mat-card-content>
+            <!-- <mat-card-actions>
+                <button mat-button color="primary" (click)="bookCar(car)">Book</button>
+            </mat-card-actions> -->
+        </mat-card>
+    </div>
+</div>

@@ -1,114 +1,72 @@
 <!-- <header class="header">
-    <div class="logo">
-      <img src="assets/ncs_logo.png" alt="Logo">
-    </div>
-    <div class="profile-dropdown">
-      <div class="profile-icon" (click)="toggleDropdown()">
-        <i class="fas fa-user-circle person-icon"></i>
+  <div class="logo">
+    <img src="../../assets/headerAssets/ncs_logo.png" alt="Logo">
+  </div>
+  <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
+ 
+    <button mat-icon-button class="profile-button" (click)="toggleDropdown()">
+      <i class="fas fa-user-circle person-icon"></i>
+      <i class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }"></i>
+    </button>
+    <mat-menu #dropdownMenu="matMenu" class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
+      <button mat-menu-item (click)="openDialog()">
+        <span>Login</span>
+      </button>
+      <button mat-menu-item (click)="openDialog()">
+        <span>Register</span>
+      </button>
+    </mat-menu>
+  </div>
+</header> -->
+<!-- header section start -->
+<div class="header_section">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" (click)=" toDashboard()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="toAboutUs()">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Vehicles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="client.html">Client</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        </form>
       </div>
-      <div class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }" (click)="toggleDropdown()">
-        <i class="fas fa-chevron-up"></i>
-      </div>
-      <div class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
-        <a href="#">Login <i class="fas fa-chevron-right"></i></a>
-        <a href="#">Register <i class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>
-  </header>
-   -->
+      <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
 
-   <!-- <header class="header">
-    <div class="logo">
-      <img src="assets/ncs_logo.png" alt="Logo">
-    </div>
-    <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
-      <div class="profile-icon" (click)="toggleDropdown()">
-        <i class="fas fa-user-circle person-icon"></i>
-      </div>
-      <div class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }" (click)="toggleDropdown()">
-        <i class="fas fa-chevron-up"></i>
-      </div>
-      <mat-menu #dropdownMenu="matMenu" class="dropdown-content">
-        <button mat-menu-item>
-          <span>Login</span>
-          <span class="arrow-icon"><i class="fas fa-chevron-right"></i></span>
+        <button mat-icon-button class="profile-button" (click)="toggleDropdown()">
+          <img src="../../assets/headerAssets/profile.png" alt="profile">
+          <i class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }"></i>
         </button>
-        <button mat-menu-item>
-          <span>Register</span>
-          <span class="arrow-icon"><i class="fas fa-chevron-right"></i></span>
-        </button>
-      </mat-menu>
-    </div>
-  </header> -->
-  
-<!-- 
-  <header class="header">
-    <div class="logo">
-      <img src="assets/ncs_logo.png" alt="Logo">
-    </div>
-    <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
-      <div class="profile-icon" (click)="toggleDropdown()">
-        <i class="fas fa-user-circle person-icon"></i>
-      </div>
-      <div class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }" (click)="toggleDropdown()">
-        <i class="fas fa-chevron-up"></i>
-      </div>
-      <mat-menu #dropdownMenu="matMenu" class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
-        <button mat-menu-item>
-          <span>Login</span>
-          <i class="fas fa-chevron-right"></i>
-        </button>
-        <button mat-menu-item>
-          <span>Register</span>
-          <i class="fas fa-chevron-right"></i>
-        </button>
-      </mat-menu>
-    </div>
-  </header>
-     -->
-
-<!-- 
-     <header class="header">
-        <div class="logo">
-          <img src="assets/ncs_logo.png" alt="Logo">
-        </div>
-        <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
-          <button mat-icon-button class="profile-button" (click)="toggleDropdown()">
-            <i class="fas fa-user-circle person-icon"></i>
-            <i class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }"></i>
+        <mat-menu #dropdownMenu="matMenu" class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
+          <button mat-menu-item (click)="openDialog()">
+            <span>Login</span>
           </button>
-          <mat-menu #dropdownMenu="matMenu" class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
-            <button mat-menu-item>
-              <span>Login</span>
-            </button>
-            <button mat-menu-item>
-              <span>Register</span>
-            </button>
-          </mat-menu>
-        </div>
-      </header>
-       -->
-
-
-       <header class="header">
-        <div class="logo">
-          <img src="../../assets/headerAssets/ncs_logo.png" alt="Logo">
-        </div>
-        <div class="profile-dropdown" [matMenuTriggerFor]="dropdownMenu">
-          <!-- <div class="profile-dropdown" [matMenuTriggerFor]="#menuTrigger"> -->
-
-          <button mat-icon-button class="profile-button" (click)="toggleDropdown()">
-            <i class="fas fa-user-circle person-icon"></i>
-            <i class="arrow-icon" [ngClass]="{ 'inverted': isDropdownOpen }"></i>
+          <button mat-menu-item (click)="openDialog()">
+            <span>Register</span>
           </button>
-          <mat-menu #dropdownMenu="matMenu" class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
-            <button mat-menu-item (click)="openDialog()">
-              <span>Login</span>
-            </button>
-            <button mat-menu-item (click)="openDialog()">
-              <span>Register</span>
-            </button>
-          </mat-menu>
-        </div>
-      </header>
-      
+        </mat-menu>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- header section end -->

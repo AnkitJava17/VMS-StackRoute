@@ -4,5 +4,4 @@ export interface Car {
     carModel: string;
     carYear: number;
     carDriver: String;
-
 }

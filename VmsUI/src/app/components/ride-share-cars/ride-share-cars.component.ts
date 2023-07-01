@@ -9,22 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./ride-share-cars.component.css']
 })
 export class RideShareCarsComponent implements OnInit {
-  // availableCars: Car[] = [];
-  availableCars: Car[] = [
-    {
-      carBrand: 'Toyota',
-      carModel: 'Corolla',
-      carYear: 2020,
-      carDriver: 'John Doe',
-    },
-    {
-      carBrand: 'Honda',
-      carModel: 'Civic',
-      carYear: 2018,
-      carDriver: 'Jane Smith',
-    },
-    // Add more car objects as needed
-  ];
+  availableCars: Car[] = [];
 
   constructor(private shareCarService: ShareCarService, private route: Router) { }
 

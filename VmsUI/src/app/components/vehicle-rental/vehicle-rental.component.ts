@@ -7,39 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./vehicle-rental.component.css']
 })
 export class VehicleRentalComponent {
-  searchResult: any;
-  source: string = "";
-  destination: string = "";
-  date: string = "";
-  passengers: number = 0;
-  //searchRides: Rides[] = [];
+  cities = ['City 1', 'City 2', 'City 3'];
   constructor(private http: HttpClient) { }
-  searchRide() {
-    const apiUrl = 'http://localhost:8083/api/rides/getAllCars';
-    const queryParams = `?source=${this.source}&destination=${this.destination}&date=${this.date}&passengers=${this.passengers}`;
 
-    this.http.get(apiUrl + queryParams).subscribe(
-      (response: any) => {
-        this.searchResult = {
-          date: this.date,
-          source: this.source,
-          destination: this.destination,
-          passengers: this.passengers,
-          carDetails: response
-        };
-        console.log(this.searchResult);
-      },
-      (err:Error) => {
-        console.error(err);
-      }
-    );
-  }
-
-  searchCar(){}
-
-  showPopup(){}
-
-  setPickUp(){}
-
-  setDropOff(){}
 }

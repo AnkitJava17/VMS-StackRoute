@@ -15,9 +15,11 @@
         <module name="VMS-ConfigServer" />
         <module name="RideSharingService" />
         <module name="VMS-DiscoveryService" />
-        <module name="AuthenticationService" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AuthenticationService" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

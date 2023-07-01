@@ -8,19 +8,28 @@ export class RouterService {
 
   constructor(private router: Router) { }
 
-  toShare(){
+  toShare() {
     this.router.navigate(['ride-sharing']);
   }
 
-  toRent(){
+  toRent() {
     this.router.navigate(['rent']);
   }
-  toRideShare(){
+  toRideShare() {
     this.router.navigate(['ride-sharing']);
   }
 
-  toTripDivision(){
+  toTripDivision() {
     this.router.navigate(['trip-division']);
+  }
+  toDashboard() {
+    this.router.navigate(['dash-board']);
+  }
+  toAboutUs(){
+    this.router.navigate(['about-us']);
+  }
+  toServices(){
+    this.router.navigate(["dash-services"]);
   }
 }
 // { path: '', pathMatch: 'full', redirectTo: 'dashboard' },

@@ -1,16 +1,20 @@
 <!-- <div id="output">
 
 </div> -->
+
 <h3>Ride Details:</h3>
 <div mat-dialog-content id="output">
 
 </div>
-<div *ngIf="searchResult">
+<button mat-raised-button color="primary" (click)="searchRide()">Ride Details
+</button>
+<div mat-dialog-content *ngIf="searchResult">
 
     <p>Date: {{ searchResult.date }}</p>
     <p>Number of Passengers: {{ searchResult.passengers }}</p>
     <a routerLink="/cars">Car details</a>
-    <div mat-dialog-actions>
-        <button mat-button mat-dialog-close>No</button>
-        <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
-    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>No</button>
+    <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
+</div>

@@ -18,7 +18,7 @@ import { AuthService } from './services/auth.service';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
@@ -41,6 +41,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 // import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 // import { ModalModule } from 'mdb-angular-ui-kit/modal';
 
+import { MatSelectModule } from '@angular/material/select';
+import { CarouselModule } from 'primeng/carousel';
+import { RentBikeComponent } from './components/rent-bike/rent-bike.component';
+import { RentCarsComponent } from './components/rent-cars/rent-cars.component';
+import { DashBoardComponent } from './components/dash-board/dash-board.component';
+
+import { DashServicesComponent } from './components/dash-services/dash-services.component';
 
 
 
@@ -49,7 +56,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     AppComponent,
     AboutUsComponent,
     ContactUsComponent,
-    DashboardComponent,
     FooterComponent,
     HeaderComponent,
     LoginComponent,
@@ -62,6 +68,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     RideShareCarsComponent,
     RideShareComponent,
     AdminRideShareComponent,
+
+    RentBikeComponent,
+    RentCarsComponent,
+    DashBoardComponent,
+  
+    DashServicesComponent,
   ],
   imports: [
     BrowserModule,
@@ -87,7 +99,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatGridListModule,
     MatListModule,
     MatCheckboxModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    CarouselModule
   ],
   providers: [
     AuthService,

@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { MatDialog, MatDialogRef, MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
-import { NgIf } from '@angular/common';
+
 
 declare const google: any;
 declare global {
@@ -18,7 +18,7 @@ declare global {
 @Component({
   selector: 'app-ride-sharing',
   templateUrl: './ride-sharing.component.html',
-  styleUrls: ['./ride-sharing.component.css']
+  styleUrls: ['./ride-sharing.component.css'],
 })
 export class RideSharingComponent implements OnInit {
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
@@ -132,12 +132,14 @@ export class RideSharingComponent implements OnInit {
     });
   }
 }
-
+import { NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'dialog-animations-example-dialog',
   templateUrl: 'dialog-animations-example-dialog.html',
   standalone: true,
-  imports: [MatDialogModule, MatButtonModule],
+  imports: [MatDialogModule, MatButtonModule, CommonModule],
+
 })
 export class DialogAnimationsExampleDialog {
   constructor(public dialogRef: MatDialogRef<DialogAnimationsExampleDialog>, private http: HttpClient) { }
