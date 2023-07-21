@@ -22,7 +22,7 @@ import com.trip.service.TripDivisionInfoServiceImpl;
 public class TripDivisionInfoController {
     
     @Autowired
-		private TripDivisionInfoServiceImpl tripDivisionInfoService;
+		private TripDivisionInfoService tripDivisionInfoService;
 		
 		// @GetMapping("/tripdiv")
 		// public ResponseEntity<List<TripDivisionInfo>> getAllTripDivisionInfo(){
